@@ -1,0 +1,8 @@
+[INFO] [1743058486.114220197] [robot.lifecycle_manager_localization]: Creating
+[INFO] [1743058486.137232167] [robot.lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [1743058486.172668518] [robot.lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[INFO] [1743058486.172760827] [robot.lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[ERROR] [1743058486.180022513] [robot.lifecycle_manager_localization]: Failed to change state for node: map_server
+[ERROR] [1743058486.180097395] [robot.lifecycle_manager_localization]: Failed to bring up all requested nodes. Aborting bringup.
+[INFO] [1743058584.989561930] [rclcpp]: signal_handler(signum=2)
+[INFO] [1743058584.990350453] [robot.lifecycle_manager_localization]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_localization)

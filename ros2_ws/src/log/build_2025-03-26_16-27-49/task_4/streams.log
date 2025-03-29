@@ -1,0 +1,30 @@
+[0.501s] Invoking command in '/home/me597/ros2_ws/src/task_4': PYTHONPATH=/home/me597/ros2_ws/src/build/task_4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/ros2_ws/src/install/task_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/task_4 build --build-base /home/me597/ros2_ws/src/build/task_4/build install --record /home/me597/ros2_ws/src/build/task_4/install.log --single-version-externally-managed install_data
+[0.676s] running egg_info
+[0.676s] writing ../build/task_4/task_4.egg-info/PKG-INFO
+[0.676s] writing dependency_links to ../build/task_4/task_4.egg-info/dependency_links.txt
+[0.676s] writing entry points to ../build/task_4/task_4.egg-info/entry_points.txt
+[0.677s] writing requirements to ../build/task_4/task_4.egg-info/requires.txt
+[0.677s] writing top-level names to ../build/task_4/task_4.egg-info/top_level.txt
+[0.678s] reading manifest file '../build/task_4/task_4.egg-info/SOURCES.txt'
+[0.680s] writing manifest file '../build/task_4/task_4.egg-info/SOURCES.txt'
+[0.680s] running build
+[0.680s] running build_py
+[0.681s] copying task_4/auto_navigator.py -> /home/me597/ros2_ws/src/build/task_4/build/lib/task_4
+[0.681s] running install
+[0.681s] running install_lib
+[0.681s] copying /home/me597/ros2_ws/src/build/task_4/build/lib/task_4/auto_navigator.py -> /home/me597/ros2_ws/src/install/task_4/lib/python3.10/site-packages/task_4
+[0.682s] byte-compiling /home/me597/ros2_ws/src/install/task_4/lib/python3.10/site-packages/task_4/auto_navigator.py to auto_navigator.cpython-310.pyc
+[0.683s] running install_data
+[0.683s] copying package.xml -> /home/me597/ros2_ws/src/install/task_4/share/task_4
+[0.684s] copying launch/view_robot.launch.py -> /home/me597/ros2_ws/src/install/task_4/share/task_4/launch
+[0.684s] copying launch/turtlebot4_navigator.launch.py -> /home/me597/ros2_ws/src/install/task_4/share/task_4/launch
+[0.685s] creating /home/me597/ros2_ws/src/install/task_4/share/task_4/rviz
+[0.685s] copying rviz/robot.rviz -> /home/me597/ros2_ws/src/install/task_4/share/task_4/rviz
+[0.685s] creating /home/me597/ros2_ws/src/install/task_4/share/task_4/maps
+[0.685s] running install_egg_info
+[0.688s] removing '/home/me597/ros2_ws/src/install/task_4/lib/python3.10/site-packages/task_4-0.0.0-py3.10.egg-info' (and everything under it)
+[0.689s] Copying ../build/task_4/task_4.egg-info to /home/me597/ros2_ws/src/install/task_4/lib/python3.10/site-packages/task_4-0.0.0-py3.10.egg-info
+[0.690s] running install_scripts
+[0.705s] Installing auto_navigator script to /home/me597/ros2_ws/src/install/task_4/lib/task_4
+[0.706s] writing list of installed files to '/home/me597/ros2_ws/src/build/task_4/install.log'
+[0.724s] Invoked command in '/home/me597/ros2_ws/src/task_4' returned '0': PYTHONPATH=/home/me597/ros2_ws/src/build/task_4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/ros2_ws/src/install/task_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/task_4 build --build-base /home/me597/ros2_ws/src/build/task_4/build install --record /home/me597/ros2_ws/src/build/task_4/install.log --single-version-externally-managed install_data

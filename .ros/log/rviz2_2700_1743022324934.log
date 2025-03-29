@@ -1,0 +1,17 @@
+[INFO] [1743022326.155420334] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1743022326.156090060] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[INFO] [1743022326.556342138] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1743022328.166178625] [rviz2]: Trying to create a map of size 266 x 212 using 1 swatches
+[ERROR] [1743022328.183592737] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1743022362.550189330] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1078.972 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743022362.960855420] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1079.173 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743022363.368167342] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1079.377 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743022363.753893044] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1079.575 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743022364.263917280] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1079.776 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743022364.766186897] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1079.984 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743023051.891373501] [rviz2]: Setting estimate pose: Frame:map, Position(0.0890475, -0.0831776, 0), Orientation(0, 0, 0.0115237, 0.999934) = Angle: 0.0230478
+[INFO] [1743023062.876820652] [rviz2]: Setting goal pose: Frame:map, Position(3.63269, -0.599128, 0), Orientation(0, 0, -0.017624, 0.999845) = Angle: -0.0352498
+[INFO] [1743023564.820139762] [rviz2]: Setting estimate pose: Frame:map, Position(0.0368411, -0.0510339, 0), Orientation(0, 0, 0.00992384, 0.999951) = Angle: 0.019848
+[INFO] [1743023569.959463986] [rviz2]: Setting goal pose: Frame:map, Position(2.86717, -0.801006, 0), Orientation(0, 0, 0.0519037, 0.998652) = Angle: 0.103854
+[INFO] [1743024092.858935082] [rclcpp]: signal_handler(signum=2)

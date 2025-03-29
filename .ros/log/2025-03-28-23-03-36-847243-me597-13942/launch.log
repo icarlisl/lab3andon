@@ -1,0 +1,3 @@
+1743217416.8479347 [INFO] [launch]: All log files can be found below /home/me597/.ros/log/2025-03-28-23-03-36-847243-me597-13942
+1743217416.8480380 [INFO] [launch]: Default logging verbosity is set to INFO
+1743217417.4795198 [ERROR] [launch]: Caught exception in launch (see debug for traceback): [Errno 2] No such file or directory: '/home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/urdf/turtlebot3_burger.urdf'

@@ -1,0 +1,14 @@
+[INFO] [1743098629.526591834] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1743098629.526752636] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[INFO] [1743098629.699138182] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1743098630.466324408] [rviz2]: Trying to create a map of size 266 x 212 using 1 swatches
+[ERROR] [1743098630.475332449] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1743098650.828307149] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1078.702 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743098651.191926291] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1078.903 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743098651.554654810] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1079.106 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743098651.879561373] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1079.305 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743098652.233747758] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1079.507 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743098652.610613878] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1079.709 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743098682.091194574] [rviz2]: Setting estimate pose: Frame:map, Position(-0.0575178, -0.0289172, 0), Orientation(0, 0, 0.0206096, 0.999788) = Angle: 0.0412222
+[INFO] [1743098684.727254841] [rviz2]: Setting goal pose: Frame:map, Position(3.30348, -0.616229, 0), Orientation(0, 0, 0.0807105, 0.996738) = Angle: 0.161597

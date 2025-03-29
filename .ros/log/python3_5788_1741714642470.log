@@ -1,0 +1,8 @@
+[INFO] [1741714642.663403508] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1741714642.664524386] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1741714642.667005936] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1741714642.667727654] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]

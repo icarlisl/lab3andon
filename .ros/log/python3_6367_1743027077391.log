@@ -1,0 +1,148 @@
+[INFO] [1743027077.674220024] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027077.674595545] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027077.745473011] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027077.747579353] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027077.844877156] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027077.845246496] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027077.944610754] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027077.945094591] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027078.046016734] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027078.049210675] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027078.145833890] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027078.146301591] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027078.243890330] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027078.245521174] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027078.343615039] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027078.344015829] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027078.443805004] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027078.444194175] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027078.545096384] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027078.545492327] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027078.644454804] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027078.648074040] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027078.744276288] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027078.744706640] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027078.843680674] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027078.844026907] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027078.944097135] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027078.947076268] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027079.043897678] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027079.049622997] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027079.144818118] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027079.145251601] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027079.243443312] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027079.246709943] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027079.344102505] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027079.344615044] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027079.444248714] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027079.444602872] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027079.543877657] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027079.544535394] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027079.647817871] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027079.648297242] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027079.743920738] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027079.744319761] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027079.844520441] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027079.846733881] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027079.944273910] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027079.944627939] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027080.044355842] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027080.046359470] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027080.144101059] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027080.144517763] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027080.244886316] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027080.247276108] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027080.345619749] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027080.346090188] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027080.445002648] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027080.445524142] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027080.544408693] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027080.547361477] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027080.646437820] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027080.646923840] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027080.746218894] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027080.747325763] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027080.847126273] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027080.849699786] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027080.943733299] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027080.947579456] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027081.044539952] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027081.044959304] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027081.146186542] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027081.146516584] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]
+[INFO] [1743027081.147035071] [Navigation]: A* planner.
+> start: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0),
+> end: geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0)
+[INFO] [1743027081.147309493] [Navigation]: Generated Path: [(0.0, 0.0), (0.0, 0.0)]

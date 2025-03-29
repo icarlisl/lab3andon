@@ -1,0 +1,17 @@
+[INFO] [1743098314.896157827] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1743098314.898405291] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[INFO] [1743098315.052243322] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1743098315.689850542] [rviz2]: Trying to create a map of size 266 x 212 using 1 swatches
+[ERROR] [1743098315.708172518] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1743098334.884587077] [rviz2]: Setting estimate pose: Frame:map, Position(-0.057401, -0.0183993, 0), Orientation(0, 0, 0.00984941, 0.999951) = Angle: 0.0196991
+[INFO] [1743098338.078593564] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1081.025 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743098338.496063545] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1081.227 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743098338.818906093] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1081.428 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743098339.157492433] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1081.630 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743098339.484522825] [rviz2]: Setting goal pose: Frame:map, Position(3.34586, -0.659083, 0), Orientation(0, 0, 0.0701154, 0.997539) = Angle: 0.140346
+[INFO] [1743098339.570583780] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1081.837 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743098339.862354466] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1082.035 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743098353.700229480] [rviz2]: Setting goal pose: Frame:map, Position(2.59422, -0.586609, 0), Orientation(0, 0, 0.0412567, 0.999149) = Angle: 0.0825369
+[INFO] [1743098364.701387448] [rviz2]: Setting goal pose: Frame:map, Position(2.75043, -0.768779, 0), Orientation(0, 0, 0.0991366, 0.995074) = Angle: 0.198599
+[INFO] [1743098372.312846756] [rclcpp]: signal_handler(signum=2)

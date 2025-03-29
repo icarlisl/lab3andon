@@ -1,0 +1,21 @@
+1743027067.1672075 [INFO] [launch]: All log files can be found below /home/me597/.ros/log/2025-03-26-18-11-07-165867-me597-6250
+1743027067.1674919 [INFO] [launch]: Default logging verbosity is set to INFO
+1743027068.8685174 [INFO] [gzserver-1]: process started with pid [6251]
+1743027068.8719454 [INFO] [gzclient-2]: process started with pid [6253]
+1743027068.8793423 [INFO] [robot_state_publisher-3]: process started with pid [6255]
+1743027068.8794725 [INFO] [spawn_entity.py-4]: process started with pid [6257]
+1743027068.8795438 [INFO] [rviz2-5]: process started with pid [6259]
+1743027068.8796074 [INFO] [map_server-6]: process started with pid [6261]
+1743027068.8796754 [INFO] [amcl-7]: process started with pid [6263]
+1743027068.8797338 [INFO] [lifecycle_manager-8]: process started with pid [6265]
+1743027068.8797905 [INFO] [task2.py-9]: process started with pid [6268]
+1743027069.9236810 [ERROR] [gzserver-1]: process has died [pid 6251, exit code 255, cmd 'gzserver /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/worlds/house_closed.world -slibgazebo_ros_init.so -slibgazebo_ros_factory.so -slibgazebo_ros_force_system.so'].
+1743027100.8117690 [ERROR] [spawn_entity.py-4]: process has died [pid 6257, exit code 1, cmd '/opt/ros/humble/lib/gazebo_ros/spawn_entity.py -entity waffle -file /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/models/turtlebot3_waffle/model.sdf -x 0 -y 0 -z 0.01 --ros-args'].
+1743027121.6523583 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1743027121.7131555 [ERROR] [gzclient-2]: process has died [pid 6253, exit code -2, cmd 'gzclient --gui-client-plugin=libgazebo_ros_eol_gui.so'].
+1743027121.9170666 [INFO] [robot_state_publisher-3]: process has finished cleanly [pid 6255]
+1743027121.9513135 [INFO] [lifecycle_manager-8]: process has finished cleanly [pid 6265]
+1743027121.9769619 [INFO] [amcl-7]: process has finished cleanly [pid 6263]
+1743027121.9801040 [INFO] [map_server-6]: process has finished cleanly [pid 6261]
+1743027122.0987248 [ERROR] [task2.py-9]: process has died [pid 6268, exit code 1, cmd '/home/me597/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/task2.py --ros-args -r __node:=task2_algorithm --params-file /tmp/launch_params_f718anui'].
+1743027122.2088034 [INFO] [rviz2-5]: process has finished cleanly [pid 6259]

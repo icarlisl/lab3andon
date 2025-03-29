@@ -1,0 +1,9 @@
+[INFO] [1741553238.336226505] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1741553238.337829051] [rviz2]: OpenGl version: 4.3 (GLSL 4.3)
+[INFO] [1741553238.406757215] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1741553273.330120326] [rviz2]: Trying to create a map of size 157 x 107 using 1 swatches
+[ERROR] [1741553273.422661272] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1741553282.271953045] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1078.594 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1741553282.484732608] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1078.795 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1741553323.000992053] [rclcpp]: signal_handler(signum=2)

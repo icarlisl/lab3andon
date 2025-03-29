@@ -1,0 +1,7 @@
+1741546521.6306076 [INFO] [launch]: All log files can be found below /home/me597/.ros/log/2025-03-09-14-55-21-629901-me597-4123
+1741546521.6308103 [INFO] [launch]: Default logging verbosity is set to INFO
+1741546521.6831493 [INFO] [sync_slam_toolbox_node-1]: process started with pid [4124]
+1741546521.6837587 [INFO] [rviz2-2]: process started with pid [4126]
+1741546745.6407328 [ERROR] [rviz2-2]: process has died [pid 4126, exit code -11, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /opt/ros/humble/share/turtlebot4_viz/rviz/robot.rviz --ros-args -r __node:=rviz2 -r __ns:=/robot --params-file /tmp/launch_params_ynsjyido -r /tf:=tf -r /tf_static:=tf_static'].
+1741546749.4349325 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1741546749.5570786 [INFO] [sync_slam_toolbox_node-1]: process has finished cleanly [pid 4124]

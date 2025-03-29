@@ -1,0 +1,3 @@
+1741546293.7959187 [INFO] [launch]: All log files can be found below /home/me597/.ros/log/2025-03-09-14-51-33-794549-me597-2406
+1741546293.7960589 [INFO] [launch]: Default logging verbosity is set to INFO
+1741546293.8526397 [ERROR] [launch]: Caught exception in launch (see debug for traceback): "package 'turtlebot4_navigation' not found, searching: ['/home/me597/ros2_ws/install/task_4', '/home/me597/install/task_4', '/opt/ros/humble']"

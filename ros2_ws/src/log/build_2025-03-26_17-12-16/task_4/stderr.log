@@ -1,0 +1,5 @@
+  File "/home/me597/ros2_ws/src/install/task_4/lib/python3.10/site-packages/task_4/auto_navigator.py", line 17
+    self.map_im, self.map_df, self.limits = self.__open_map(map
+                                                           ^
+SyntaxError: '(' was never closed
+

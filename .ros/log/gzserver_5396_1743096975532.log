@@ -1,0 +1,12 @@
+[INFO] [1743096977.128118259] [gazebo_ros_state]: Publishing states of gazebo models at [/model_states]
+[INFO] [1743096977.132281050] [gazebo_ros_state]: Publishing states of gazebo links at [/link_states]
+[INFO] [1743096977.539034842] [gazebo_ros_bumper_controller]: Publishing contact states to [/bumper_collisions]
+[INFO] [1743096977.586772703] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[INFO] [1743096979.210590665] [camera_driver]: Publishing camera info to [/camera/camera_info]
+[INFO] [1743096979.396345053] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.287000m]
+[INFO] [1743096979.396397262] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[INFO] [1743096979.397631530] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[INFO] [1743096979.405290901] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[INFO] [1743096979.413475755] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[INFO] [1743096979.495749135] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[INFO] [1743096979.495803237] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]

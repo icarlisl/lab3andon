@@ -1,0 +1,265 @@
+// Localization support
+const messages = {
+  'en': {
+    'copy': 'Copy',
+    'copy_to_clipboard': 'Copy to clipboard',
+    'copy_success': 'Copied!',
+    'copy_failure': 'Failed to copy',
+  },
+  'es' : {
+    'copy': 'Copiar',
+    'copy_to_clipboard': 'Copiar al portapapeles',
+    'copy_success': '¡Copiado!',
+    'copy_failure': 'Error al copiar',
+  },
+  'de' : {
+    'copy': 'Kopieren',
+    'copy_to_clipboard': 'In die Zwischenablage kopieren',
+    'copy_success': 'Kopiert!',
+    'copy_failure': 'Fehler beim Kopieren',
+  },
+  'fr' : {
+    'copy': 'Copier',
+    'copy_to_clipboard': 'Copier dans le presse-papier',
+    'copy_success': 'Copié !',
+    'copy_failure': 'Échec de la copie',
+  },
+  'ru': {
+    'copy': 'Скопировать',
+    'copy_to_clipboard': 'Скопировать в буфер',
+    'copy_success': 'Скопировано!',
+    'copy_failure': 'Не удалось скопировать',
+  },
+  'zh-CN': {
+    'copy': '复制',
+    'copy_to_clipboard': '复制到剪贴板',
+    'copy_success': '复制成功!',
+    'copy_failure': '复制失败',
+  },
+  'it' : {
+    'copy': 'Copiare',
+    'copy_to_clipboard': 'Copiato negli appunti',
+    'copy_success': 'Copiato!',
+    'copy_failure': 'Errore durante la copia',
+  }
+}
+
+let locale = 'en'
+if( document.documentElement.lang !== undefined
+    && messages[document.documentElement.lang] !== undefined ) {
+  locale = document.documentElement.lang
+}
+
+let doc_url_root = DOCUMENTATION_OPTIONS.URL_ROOT;
+if (doc_url_root == '#') {
+    doc_url_root = '';
+}
+
+/**
+ * SVG files for our copy buttons
+ */
+let iconCheck = `<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#22863a" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <title>${messages[locale]['copy_success']}</title>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M5 12l5 5l10 -10" />
+</svg>`
+
+// If the user specified their own SVG use that, otherwise use the default
+let iconCopy = ``;
+if (!iconCopy) {
+  iconCopy = `<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <title>${messages[locale]['copy_to_clipboard']}</title>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="8" y="8" width="12" height="12" rx="2" />
+  <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
+</svg>`
+}
+
+/**
+ * Set up copy/paste for code blocks
+ */
+
+const runWhenDOMLoaded = cb => {
+  if (document.readyState != 'loading') {
+    cb()
+  } else if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', cb)
+  } else {
+    document.attachEvent('onreadystatechange', function() {
+      if (document.readyState == 'complete') cb()
+    })
+  }
+}
+
+const codeCellId = index => `codecell${index}`
+
+// Clears selected text since ClipboardJS will select the text when copying
+const clearSelection = () => {
+  if (window.getSelection) {
+    window.getSelection().removeAllRanges()
+  } else if (document.selection) {
+    document.selection.empty()
+  }
+}
+
+// Changes tooltip text for a moment, then changes it back
+// We want the timeout of our `success` class to be a bit shorter than the
+// tooltip and icon change, so that we can hide the icon before changing back.
+var timeoutIcon = 2000;
+var timeoutSuccessClass = 1500;
+
+const temporarilyChangeTooltip = (el, oldText, newText) => {
+  el.setAttribute('data-tooltip', newText)
+  el.classList.add('success')
+  // Remove success a little bit sooner than we change the tooltip
+  // So that we can use CSS to hide the copybutton first
+  setTimeout(() => el.classList.remove('success'), timeoutSuccessClass)
+  setTimeout(() => el.setAttribute('data-tooltip', oldText), timeoutIcon)
+}
+
+// Changes the copy button icon for two seconds, then changes it back
+const temporarilyChangeIcon = (el) => {
+  el.innerHTML = iconCheck;
+  setTimeout(() => {el.innerHTML = iconCopy}, timeoutIcon)
+}
+
+const addCopyButtonToCodeCells = () => {
+  // If ClipboardJS hasn't loaded, wait a bit and try again. This
+  // happens because we load ClipboardJS asynchronously.
+  if (window.ClipboardJS === undefined) {
+    setTimeout(addCopyButtonToCodeCells, 250)
+    return
+  }
+
+  // Add copybuttons to all of our code cells
+  const COPYBUTTON_SELECTOR = 'div.highlight pre';
+  const codeCells = document.querySelectorAll(COPYBUTTON_SELECTOR)
+  codeCells.forEach((codeCell, index) => {
+    const id = codeCellId(index)
+    codeCell.setAttribute('id', id)
+
+    const clipboardButton = id =>
+    `<button class="copybtn o-tooltip--left" data-tooltip="${messages[locale]['copy']}" data-clipboard-target="#${id}">
+      ${iconCopy}
+    </button>`
+    codeCell.insertAdjacentHTML('afterend', clipboardButton(id))
+  })
+
+function escapeRegExp(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+}
+
+/**
+ * Removes excluded text from a Node.
+ *
+ * @param {Node} target Node to filter.
+ * @param {string} exclude CSS selector of nodes to exclude.
+ * @returns {DOMString} Text from `target` with text removed.
+ */
+function filterText(target, exclude) {
+    const clone = target.cloneNode(true);  // clone as to not modify the live DOM
+    if (exclude) {
+        // remove excluded nodes
+        clone.querySelectorAll(exclude).forEach(node => node.remove());
+    }
+    return clone.innerText;
+}
+
+// Callback when a copy button is clicked. Will be passed the node that was clicked
+// should then grab the text and replace pieces of text that shouldn't be used in output
+function formatCopyText(textContent, copybuttonPromptText, isRegexp = false, onlyCopyPromptLines = true, removePrompts = true, copyEmptyLines = true, lineContinuationChar = "", hereDocDelim = "") {
+    var regexp;
+    var match;
+
+    // Do we check for line continuation characters and "HERE-documents"?
+    var useLineCont = !!lineContinuationChar
+    var useHereDoc = !!hereDocDelim
+
+    // create regexp to capture prompt and remaining line
+    if (isRegexp) {
+        regexp = new RegExp('^(' + copybuttonPromptText + ')(.*)')
+    } else {
+        regexp = new RegExp('^(' + escapeRegExp(copybuttonPromptText) + ')(.*)')
+    }
+
+    const outputLines = [];
+    var promptFound = false;
+    var gotLineCont = false;
+    var gotHereDoc = false;
+    const lineGotPrompt = [];
+    for (const line of textContent.split('\n')) {
+        match = line.match(regexp)
+        if (match || gotLineCont || gotHereDoc) {
+            promptFound = regexp.test(line)
+            lineGotPrompt.push(promptFound)
+            if (removePrompts && promptFound) {
+                outputLines.push(match[2])
+            } else {
+                outputLines.push(line)
+            }
+            gotLineCont = line.endsWith(lineContinuationChar) & useLineCont
+            if (line.includes(hereDocDelim) & useHereDoc)
+                gotHereDoc = !gotHereDoc
+        } else if (!onlyCopyPromptLines) {
+            outputLines.push(line)
+        } else if (copyEmptyLines && line.trim() === '') {
+            outputLines.push(line)
+        }
+    }
+
+    // If no lines with the prompt were found then just use original lines
+    if (lineGotPrompt.some(v => v === true)) {
+        textContent = outputLines.join('\n');
+    }
+
+    // Remove a trailing newline to avoid auto-running when pasting
+    if (textContent.endsWith("\n")) {
+        textContent = textContent.slice(0, -1)
+    }
+    return textContent
+}
+
+
+var copyTargetText = (trigger) => {
+  var target = document.querySelector(trigger.attributes['data-clipboard-target'].value);
+
+  // get filtered text
+  let exclude = '.linenos';
+
+  let text = filterText(target, exclude);
+  return formatCopyText(text, '', false, true, true, true, '', '')
+}
+
+  // Initialize with a callback so we can modify the text before copy
+  const clipboard = new ClipboardJS('.copybtn', {text: copyTargetText})
+
+  // Update UI with error/success messages
+  clipboard.on('success', event => {
+    clearSelection()
+    temporarilyChangeTooltip(event.trigger, messages[locale]['copy'], messages[locale]['copy_success'])
+    temporarilyChangeIcon(event.trigger)
+  })
+
+  clipboard.on('error', event => {
+    temporarilyChangeTooltip(event.trigger, messages[locale]['copy'], messages[locale]['copy_failure'])
+  })
+}
+
+runWhenDOMLoaded(addCopyButtonToCodeCells)�T.6��      f���f���G8p�f���   e    O^partitionKey=%28https%2Cros.org%29,:https://docs.ros.org/en/humble/_static/copybutton.js?v=f281be69 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Thu, 15 Aug 2024 23:01:02 GMT
+Server: Apache
+Last-Modified: Thu, 15 Aug 2024 11:02:30 GMT
+ETag: "2113-61fb6c772a38e"
+Accept-Ranges: bytes
+Content-Length: 8467
+Content-Type: application/javascript
+ original-response-headers Date: Thu, 15 Aug 2024 23:01:02 GMT
+Server: Apache
+Last-Modified: Thu, 15 Aug 2024 11:02:30 GMT
+ETag: "2113-61fb6c772a38e"
+Accept-Ranges: bytes
+Content-Length: 8467
+Keep-Alive: timeout=5, max=96
+Connection: Keep-Alive
+Content-Type: application/javascript
+ ctid 2 uncompressed-len 0 net-response-time-onstart 331 net-response-time-onstop 331 necko:classified 1   !

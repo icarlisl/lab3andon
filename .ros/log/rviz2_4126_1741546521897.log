@@ -1,0 +1,4 @@
+[INFO] [1741546522.052063571] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1741546522.052149261] [rviz2]: OpenGl version: 4.3 (GLSL 4.3)
+[INFO] [1741546522.093011719] [rviz2]: Stereo is NOT SUPPORTED
+[ERROR] [1741546737.949012064] [rviz2]: Failed to open /opt/ros/humble/share/turtlebot4_viz/rviz/robot.rviz for writing.

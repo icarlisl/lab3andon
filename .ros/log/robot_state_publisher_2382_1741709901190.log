@@ -1,0 +1,14 @@
+[INFO] [1741709901.336580313] [robot_state_publisher]: got segment base_footprint
+[INFO] [1741709901.336673855] [robot_state_publisher]: got segment base_link
+[INFO] [1741709901.336679595] [robot_state_publisher]: got segment base_scan
+[INFO] [1741709901.336682714] [robot_state_publisher]: got segment camera_depth_frame
+[INFO] [1741709901.336686111] [robot_state_publisher]: got segment camera_depth_optical_frame
+[INFO] [1741709901.336689366] [robot_state_publisher]: got segment camera_link
+[INFO] [1741709901.336692445] [robot_state_publisher]: got segment camera_rgb_frame
+[INFO] [1741709901.336695440] [robot_state_publisher]: got segment camera_rgb_optical_frame
+[INFO] [1741709901.336698299] [robot_state_publisher]: got segment caster_back_left_link
+[INFO] [1741709901.336701127] [robot_state_publisher]: got segment caster_back_right_link
+[INFO] [1741709901.336703969] [robot_state_publisher]: got segment imu_link
+[INFO] [1741709901.336706932] [robot_state_publisher]: got segment wheel_left_link
+[INFO] [1741709901.336710119] [robot_state_publisher]: got segment wheel_right_link
+[INFO] [1741710588.002399985] [rclcpp]: signal_handler(signum=2)

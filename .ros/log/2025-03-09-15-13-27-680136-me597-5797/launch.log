@@ -1,0 +1,5 @@
+1741547607.6808486 [INFO] [launch]: All log files can be found below /home/me597/.ros/log/2025-03-09-15-13-27-680136-me597-5797
+1741547607.6809893 [INFO] [launch]: Default logging verbosity is set to INFO
+1741547607.7245755 [INFO] [sync_slam_toolbox_node-1]: process started with pid [5798]
+1741547956.9085670 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1741547957.0172751 [INFO] [sync_slam_toolbox_node-1]: process has finished cleanly [pid 5798]

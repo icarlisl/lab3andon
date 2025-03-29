@@ -1,0 +1,13 @@
+1743059235.6875224 [INFO] [launch]: All log files can be found below /home/me597/.ros/log/2025-03-27-03-07-15-686795-me597-8747
+1743059235.6876733 [INFO] [launch]: Default logging verbosity is set to INFO
+1743059236.7053540 [INFO] [gzserver-1]: process started with pid [8748]
+1743059236.7073872 [INFO] [gzclient-2]: process started with pid [8750]
+1743059236.7094042 [INFO] [robot_state_publisher-3]: process started with pid [8752]
+1743059236.7133651 [INFO] [spawn_entity.py-4]: process started with pid [8754]
+1743059236.7160821 [INFO] [rviz2-5]: process started with pid [8756]
+1743059236.7161505 [INFO] [map_server-6]: process started with pid [8758]
+1743059236.7161965 [INFO] [amcl-7]: process started with pid [8760]
+1743059236.7162542 [INFO] [lifecycle_manager-8]: process started with pid [8763]
+1743059236.7163041 [INFO] [task2.py-9]: process started with pid [8765]
+1743059237.5682325 [ERROR] [gzserver-1]: process has died [pid 8748, exit code 255, cmd 'gzserver /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/worlds/house_closed.world -slibgazebo_ros_init.so -slibgazebo_ros_factory.so -slibgazebo_ros_force_system.so'].
+1743059268.5152915 [ERROR] [spawn_entity.py-4]: process has died [pid 8754, exit code 1, cmd '/opt/ros/humble/lib/gazebo_ros/spawn_entity.py -entity waffle -file /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/models/turtlebot3_waffle/model.sdf -x 0 -y 0 -z 0.01 --ros-args'].

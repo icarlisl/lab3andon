@@ -1,0 +1,15 @@
+[INFO] [1743100254.828631356] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1743100254.828801703] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[INFO] [1743100254.912443720] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1743100259.532218276] [rviz2]: Trying to create a map of size 157 x 107 using 1 swatches
+[ERROR] [1743100259.540681113] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1743100274.967586501] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1078.750 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743100275.317321662] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1078.952 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743100275.586912561] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1079.151 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743100304.551785025] [rviz2]: Trying to create a map of size 166 x 107 using 1 swatches
+[INFO] [1743100314.561823214] [rviz2]: Trying to create a map of size 210 x 107 using 1 swatches
+[INFO] [1743100329.611197430] [rviz2]: Trying to create a map of size 217 x 107 using 1 swatches
+[INFO] [1743100344.638718248] [rviz2]: Trying to create a map of size 230 x 107 using 1 swatches
+[INFO] [1743100349.567813415] [rviz2]: Trying to create a map of size 234 x 108 using 1 swatches
+[INFO] [1743100369.511349298] [rclcpp]: signal_handler(signum=2)

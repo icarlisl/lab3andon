@@ -1,0 +1,13 @@
+1743058485.6428421 [INFO] [launch]: All log files can be found below /home/me597/.ros/log/2025-03-27-02-54-45-642026-me597-8299
+1743058485.6429887 [INFO] [launch]: Default logging verbosity is set to INFO
+1743058485.7927427 [INFO] [map_server-1]: process started with pid [8300]
+1743058485.7929742 [INFO] [amcl-2]: process started with pid [8302]
+1743058485.7930608 [INFO] [lifecycle_manager-3]: process started with pid [8304]
+1743058485.7931247 [INFO] [rviz2-4]: process started with pid [8306]
+1743058485.7931845 [INFO] [auto_navigator-5]: process started with pid [8308]
+1743058584.9847453 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1743058585.1824348 [INFO] [map_server-1]: process has finished cleanly [pid 8300]
+1743058585.1904967 [INFO] [amcl-2]: process has finished cleanly [pid 8302]
+1743058585.1906893 [INFO] [lifecycle_manager-3]: process has finished cleanly [pid 8304]
+1743058585.4374347 [ERROR] [auto_navigator-5]: process has died [pid 8308, exit code 1, cmd '/home/me597/ros2_ws/install/task_4/lib/task_4/auto_navigator --ros-args'].
+1743058586.3638940 [ERROR] [rviz2-4]: process has died [pid 8306, exit code -11, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /home/me597/ros2_ws/install/task_4/share/task_4/rviz/robot.rviz --ros-args -r __node:=rviz2 -r __ns:=/robot --params-file /tmp/launch_params_8p8y0n7d -r /tf:=tf -r /tf_static:=tf_static'].

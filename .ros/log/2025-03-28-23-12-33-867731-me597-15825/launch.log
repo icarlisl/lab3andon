@@ -1,0 +1,447 @@
+1743217953.8688447 [INFO] [launch]: All log files can be found below /home/me597/.ros/log/2025-03-28-23-12-33-867731-me597-15825
+1743217953.8716645 [INFO] [launch]: Default logging verbosity is set to INFO
+1743217955.3363223 [INFO] [gzserver-1]: process started with pid [15826]
+1743217955.3423655 [INFO] [gzclient-2]: process started with pid [15828]
+1743217955.3465683 [INFO] [robot_state_publisher-3]: process started with pid [15830]
+1743217955.3487883 [INFO] [spawn_entity.py-4]: process started with pid [15832]
+1743217955.3672855 [INFO] [rviz2-5]: process started with pid [15834]
+1743217955.3673778 [INFO] [map_server-6]: process started with pid [15836]
+1743217955.3674200 [INFO] [amcl-7]: process started with pid [15838]
+1743217955.3674586 [INFO] [lifecycle_manager-8]: process started with pid [15841]
+1743217955.3674943 [INFO] [task2.py-9]: process started with pid [15844]
+1743217958.5304713 [gzserver-1] Error: Non-unique names detected in <link name='link'>
+1743217958.5306470 [gzserver-1]   <collision name='surface'>
+1743217958.5306780 [gzserver-1]     <pose>0 0 1 0 -0 0</pose>
+1743217958.5307016 [gzserver-1]     <geometry>
+1743217958.5307233 [gzserver-1]       <box>
+1743217958.5307448 [gzserver-1]         <size>1.5 0.8 0.03</size>
+1743217958.5307655 [gzserver-1]       </box>
+1743217958.5307868 [gzserver-1]     </geometry>
+1743217958.5308080 [gzserver-1]     <surface>
+1743217958.5308285 [gzserver-1]       <friction>
+1743217958.5308487 [gzserver-1]         <ode>
+1743217958.5308692 [gzserver-1]           <mu>0.6</mu>
+1743217958.5308893 [gzserver-1]           <mu2>0.6</mu2>
+1743217958.5309100 [gzserver-1]         </ode>
+1743217958.5309308 [gzserver-1]         <torsional>
+1743217958.5309510 [gzserver-1]           <ode/>
+1743217958.5309708 [gzserver-1]         </torsional>
+1743217958.5309908 [gzserver-1]       </friction>
+1743217958.5310113 [gzserver-1]       <contact>
+1743217958.5310318 [gzserver-1]         <ode/>
+1743217958.5310519 [gzserver-1]       </contact>
+1743217958.5310717 [gzserver-1]       <bounce/>
+1743217958.5310912 [gzserver-1]     </surface>
+1743217958.5311110 [gzserver-1]     <max_contacts>10</max_contacts>
+1743217958.5311310 [gzserver-1]   </collision>
+1743217958.5311508 [gzserver-1]   <visual name='visual1'>
+1743217958.5311708 [gzserver-1]     <pose>0 0 1 0 -0 0</pose>
+1743217958.5311913 [gzserver-1]     <geometry>
+1743217958.5312107 [gzserver-1]       <box>
+1743217958.5312304 [gzserver-1]         <size>1.4 0.8 0.04</size>
+1743217958.5312500 [gzserver-1]       </box>
+1743217958.5312698 [gzserver-1]     </geometry>
+1743217958.5312893 [gzserver-1]     <material>
+1743217958.5313091 [gzserver-1]       <script>
+1743217958.5313289 [gzserver-1]         <uri>file://media/materials/scripts/gazebo.material</uri>
+1743217958.5313494 [gzserver-1]         <name>Gazebo/Wood</name>
+1743217958.5313690 [gzserver-1]       </script>
+1743217958.5313880 [gzserver-1]     </material>
+1743217958.5314078 [gzserver-1]   </visual>
+1743217958.5377698 [gzserver-1]   <collision name='front_left_leg'>
+1743217958.5378184 [gzserver-1]     <pose>0.68 0.38 0.5 0 -0 0</pose>
+1743217958.5378416 [gzserver-1]     <geometry>
+1743217958.5378635 [gzserver-1]       <cylinder>
+1743217958.5378845 [gzserver-1]         <radius>0.02</radius>
+1743217958.5379050 [gzserver-1]         <length>1</length>
+1743217958.5379255 [gzserver-1]       </cylinder>
+1743217958.5379455 [gzserver-1]     </geometry>
+1743217958.5379653 [gzserver-1]     <max_contacts>10</max_contacts>
+1743217958.5379848 [gzserver-1]     <surface>
+1743217958.5380054 [gzserver-1]       <contact>
+1743217958.5380251 [gzserver-1]         <ode/>
+1743217958.5380449 [gzserver-1]       </contact>
+1743217958.5380647 [gzserver-1]       <bounce/>
+1743217958.5380843 [gzserver-1]       <friction>
+1743217958.5381038 [gzserver-1]         <torsional>
+1743217958.5381227 [gzserver-1]           <ode/>
+1743217958.5381424 [gzserver-1]         </torsional>
+1743217958.5381618 [gzserver-1]         <ode/>
+1743217958.5381811 [gzserver-1]       </friction>
+1743217958.5382009 [gzserver-1]     </surface>
+1743217958.5382209 [gzserver-1]   </collision>
+1743217958.5382488 [gzserver-1]   <visual name='front_left_leg'>
+1743217958.5382698 [gzserver-1]     <pose>0.68 0.38 0.5 0 -0 0</pose>
+1743217958.5382893 [gzserver-1]     <geometry>
+1743217958.5383091 [gzserver-1]       <cylinder>
+1743217958.5383291 [gzserver-1]         <radius>0.02</radius>
+1743217958.5383489 [gzserver-1]         <length>1</length>
+1743217958.5383685 [gzserver-1]       </cylinder>
+1743217958.5383885 [gzserver-1]     </geometry>
+1743217958.5384080 [gzserver-1]     <material>
+1743217958.5416534 [gzserver-1]       <script>
+1743217958.5416853 [gzserver-1]         <uri>file://media/materials/scripts/gazebo.material</uri>
+1743217958.5417094 [gzserver-1]         <name>Gazebo/Grey</name>
+1743217958.5417309 [gzserver-1]       </script>
+1743217958.5417514 [gzserver-1]     </material>
+1743217958.5417719 [gzserver-1]   </visual>
+1743217958.5417922 [gzserver-1]   <collision name='front_right_leg'>
+1743217958.5418136 [gzserver-1]     <pose>0.68 -0.38 0.5 0 -0 0</pose>
+1743217958.5418344 [gzserver-1]     <geometry>
+1743217958.5418553 [gzserver-1]       <cylinder>
+1743217958.5418751 [gzserver-1]         <radius>0.02</radius>
+1743217958.5418952 [gzserver-1]         <length>1</length>
+1743217958.5419147 [gzserver-1]       </cylinder>
+1743217958.5419340 [gzserver-1]     </geometry>
+1743217958.5419538 [gzserver-1]     <max_contacts>10</max_contacts>
+1743217958.5419736 [gzserver-1]     <surface>
+1743217958.5419929 [gzserver-1]       <contact>
+1743217958.5420120 [gzserver-1]         <ode/>
+1743217958.5420308 [gzserver-1]       </contact>
+1743217958.5420506 [gzserver-1]       <bounce/>
+1743217958.5420697 [gzserver-1]       <friction>
+1743217958.5420892 [gzserver-1]         <torsional>
+1743217958.5421093 [gzserver-1]           <ode/>
+1743217958.5421283 [gzserver-1]         </torsional>
+1743217958.5421474 [gzserver-1]         <ode/>
+1743217958.5421665 [gzserver-1]       </friction>
+1743217958.5421858 [gzserver-1]     </surface>
+1743217958.5422049 [gzserver-1]   </collision>
+1743217958.5422242 [gzserver-1]   <visual name='front_right_leg'>
+1743217958.5422442 [gzserver-1]     <pose>0.68 -0.38 0.5 0 -0 0</pose>
+1743217958.5422635 [gzserver-1]     <geometry>
+1743217958.5422833 [gzserver-1]       <cylinder>
+1743217958.5423033 [gzserver-1]         <radius>0.02</radius>
+1743217958.5423226 [gzserver-1]         <length>1</length>
+1743217958.5423422 [gzserver-1]       </cylinder>
+1743217958.5423615 [gzserver-1]     </geometry>
+1743217958.5423818 [gzserver-1]     <material>
+1743217958.5424016 [gzserver-1]       <script>
+1743217958.5424592 [gzserver-1]         <uri>file://media/materials/scripts/gazebo.material</uri>
+1743217958.5424824 [gzserver-1]         <name>Gazebo/Grey</name>
+1743217958.5425026 [gzserver-1]       </script>
+1743217958.5425224 [gzserver-1]     </material>
+1743217958.5425417 [gzserver-1]   </visual>
+1743217958.5425611 [gzserver-1]   <collision name='back_right_leg'>
+1743217958.5425811 [gzserver-1]     <pose>-0.68 -0.38 0.5 0 -0 0</pose>
+1743217958.5426006 [gzserver-1]     <geometry>
+1743217958.5426202 [gzserver-1]       <cylinder>
+1743217958.5426393 [gzserver-1]         <radius>0.02</radius>
+1743217958.5426588 [gzserver-1]         <length>1</length>
+1743217958.5426781 [gzserver-1]       </cylinder>
+1743217958.5426970 [gzserver-1]     </geometry>
+1743217958.5427163 [gzserver-1]     <max_contacts>10</max_contacts>
+1743217958.5427356 [gzserver-1]     <surface>
+1743217958.5427547 [gzserver-1]       <contact>
+1743217958.5427732 [gzserver-1]         <ode/>
+1743217958.5427926 [gzserver-1]       </contact>
+1743217958.5428309 [gzserver-1]       <bounce/>
+1743217958.5428536 [gzserver-1]       <friction>
+1743217958.5428734 [gzserver-1]         <torsional>
+1743217958.5428936 [gzserver-1]           <ode/>
+1743217958.5429132 [gzserver-1]         </torsional>
+1743217958.5429332 [gzserver-1]         <ode/>
+1743217958.5429525 [gzserver-1]       </friction>
+1743217958.5429716 [gzserver-1]     </surface>
+1743217958.5429912 [gzserver-1]   </collision>
+1743217958.5430098 [gzserver-1]   <visual name='back_right_leg'>
+1743217958.5430360 [gzserver-1]     <pose>-0.68 -0.38 0.5 0 -0 0</pose>
+1743217958.5430570 [gzserver-1]     <geometry>
+1743217958.5430763 [gzserver-1]       <cylinder>
+1743217958.5430958 [gzserver-1]         <radius>0.02</radius>
+1743217958.5431149 [gzserver-1]         <length>1</length>
+1743217958.5431349 [gzserver-1]       </cylinder>
+1743217958.5431545 [gzserver-1]     </geometry>
+1743217958.5431738 [gzserver-1]     <material>
+1743217958.5431933 [gzserver-1]       <script>
+1743217958.5432117 [gzserver-1]         <uri>file://media/materials/scripts/gazebo.material</uri>
+1743217958.5432308 [gzserver-1]         <name>Gazebo/Grey</name>
+1743217958.5432501 [gzserver-1]       </script>
+1743217958.5432689 [gzserver-1]     </material>
+1743217958.5432873 [gzserver-1]   </visual>
+1743217958.5433054 [gzserver-1]   <collision name='back_left_leg'>
+1743217958.5433249 [gzserver-1]     <pose>-0.68 0.38 0.5 0 -0 0</pose>
+1743217958.5433445 [gzserver-1]     <geometry>
+1743217958.5433636 [gzserver-1]       <cylinder>
+1743217958.5433829 [gzserver-1]         <radius>0.02</radius>
+1743217958.5434022 [gzserver-1]         <length>1</length>
+1743217958.5540435 [gzserver-1]       </cylinder>
+1743217958.5540893 [gzserver-1]     </geometry>
+1743217958.5541179 [gzserver-1]     <max_contacts>10</max_contacts>
+1743217958.5541441 [gzserver-1]     <surface>
+1743217958.5541699 [gzserver-1]       <contact>
+1743217958.5541947 [gzserver-1]         <ode/>
+1743217958.5542197 [gzserver-1]       </contact>
+1743217958.5608497 [gzserver-1]       <bounce/>
+1743217958.5610106 [gzserver-1]       <friction>
+1743217958.5610609 [gzserver-1]         <torsional>
+1743217958.5611036 [gzserver-1]           <ode/>
+1743217958.5611541 [gzserver-1]         </torsional>
+1743217958.5611966 [gzserver-1]         <ode/>
+1743217958.5612385 [gzserver-1]       </friction>
+1743217958.5612805 [gzserver-1]     </surface>
+1743217958.5613215 [gzserver-1]   </collision>
+1743217958.5614045 [gzserver-1]   <visual name='back_left_leg'>
+1743217958.5614498 [gzserver-1]     <pose>-0.68 0.38 0.5 0 -0 0</pose>
+1743217958.5614917 [gzserver-1]     <geometry>
+1743217958.5615325 [gzserver-1]       <cylinder>
+1743217958.5615728 [gzserver-1]         <radius>0.02</radius>
+1743217958.5616150 [gzserver-1]         <length>1</length>
+1743217958.5616567 [gzserver-1]       </cylinder>
+1743217958.5617981 [gzserver-1]     </geometry>
+1743217958.5618446 [gzserver-1]     <material>
+1743217958.5618870 [gzserver-1]       <script>
+1743217958.5619400 [gzserver-1]         <uri>file://media/materials/scripts/gazebo.material</uri>
+1743217958.5619855 [gzserver-1]         <name>Gazebo/Grey</name>
+1743217958.5620272 [gzserver-1]       </script>
+1743217958.5620689 [gzserver-1]     </material>
+1743217958.5621099 [gzserver-1]   </visual>
+1743217958.5621586 [gzserver-1]   <self_collide>0</self_collide>
+1743217958.5622022 [gzserver-1]   <inertial>
+1743217958.5622754 [gzserver-1]     <pose>0 0 0 0 -0 0</pose>
+1743217958.5627592 [gzserver-1]     <inertia>
+1743217958.5628126 [gzserver-1]       <ixx>1</ixx>
+1743217958.5628557 [gzserver-1]       <ixy>0</ixy>
+1743217958.5628974 [gzserver-1]       <ixz>0</ixz>
+1743217958.5629389 [gzserver-1]       <iyy>1</iyy>
+1743217958.5629797 [gzserver-1]       <iyz>0</iyz>
+1743217958.5630202 [gzserver-1]       <izz>1</izz>
+1743217958.5630608 [gzserver-1]     </inertia>
+1743217958.5828400 [gzserver-1]     <mass>1</mass>
+1743217958.5829184 [gzserver-1]   </inertial>
+1743217958.5829442 [gzserver-1]   <enable_wind>0</enable_wind>
+1743217958.5829678 [gzserver-1]   <kinematic>0</kinematic>
+1743217958.5829892 [gzserver-1] </link>
+1743217958.5833323 [gzserver-1] 
+1743217958.5833828 [gzserver-1] Error: Non-unique names detected in <link name='link'>
+1743217958.5834069 [gzserver-1]   <collision name='surface'>
+1743217958.5834284 [gzserver-1]     <pose>0 0 1 0 -0 0</pose>
+1743217958.5834491 [gzserver-1]     <geometry>
+1743217958.5834737 [gzserver-1]       <box>
+1743217958.5834942 [gzserver-1]         <size>1.5 0.8 0.03</size>
+1743217958.5835149 [gzserver-1]       </box>
+1743217958.5835657 [gzserver-1]     </geometry>
+1743217958.5836124 [gzserver-1]     <surface>
+1743217958.5836337 [gzserver-1]       <friction>
+1743217958.5836542 [gzserver-1]         <ode>
+1743217958.5836742 [gzserver-1]           <mu>0.6</mu>
+1743217958.5836940 [gzserver-1]           <mu2>0.6</mu2>
+1743217958.5837138 [gzserver-1]         </ode>
+1743217958.5837333 [gzserver-1]         <torsional>
+1743217958.5837526 [gzserver-1]           <ode/>
+1743217958.5837722 [gzserver-1]         </torsional>
+1743217958.5837924 [gzserver-1]       </friction>
+1743217958.5838120 [gzserver-1]       <contact>
+1743217958.5838315 [gzserver-1]         <ode/>
+1743217958.5838511 [gzserver-1]       </contact>
+1743217958.5838709 [gzserver-1]       <bounce/>
+1743217958.5838902 [gzserver-1]     </surface>
+1743217958.5839097 [gzserver-1]     <max_contacts>10</max_contacts>
+1743217958.5839288 [gzserver-1]   </collision>
+1743217958.5839477 [gzserver-1]   <visual name='visual1'>
+1743217958.5839674 [gzserver-1]     <pose>0 0 1 0 -0 0</pose>
+1743217958.5839868 [gzserver-1]     <geometry>
+1743217958.5840061 [gzserver-1]       <box>
+1743217958.5840254 [gzserver-1]         <size>1.4 0.8 0.04</size>
+1743217958.5840447 [gzserver-1]       </box>
+1743217958.5840638 [gzserver-1]     </geometry>
+1743217958.5840833 [gzserver-1]     <material>
+1743217958.5841026 [gzserver-1]       <script>
+1743217958.5841222 [gzserver-1]         <uri>file://media/materials/scripts/gazebo.material</uri>
+1743217958.5841427 [gzserver-1]         <name>Gazebo/Wood</name>
+1743217958.5841620 [gzserver-1]       </script>
+1743217958.5841815 [gzserver-1]     </material>
+1743217958.5842004 [gzserver-1]   </visual>
+1743217958.5842202 [gzserver-1]   <collision name='front_left_leg'>
+1743217958.5842400 [gzserver-1]     <pose>0.68 0.38 0.5 0 -0 0</pose>
+1743217958.5842588 [gzserver-1]     <geometry>
+1743217958.5842788 [gzserver-1]       <cylinder>
+1743217958.5842979 [gzserver-1]         <radius>0.02</radius>
+1743217958.5843177 [gzserver-1]         <length>1</length>
+1743217958.5843375 [gzserver-1]       </cylinder>
+1743217958.5843563 [gzserver-1]     </geometry>
+1743217958.5843756 [gzserver-1]     <max_contacts>10</max_contacts>
+1743217958.5843947 [gzserver-1]     <surface>
+1743217958.5844140 [gzserver-1]       <contact>
+1743217958.5844333 [gzserver-1]         <ode/>
+1743217958.5844524 [gzserver-1]       </contact>
+1743217958.5844746 [gzserver-1]       <bounce/>
+1743217958.5844944 [gzserver-1]       <friction>
+1743217958.5845141 [gzserver-1]         <torsional>
+1743217958.5845339 [gzserver-1]           <ode/>
+1743217958.5845530 [gzserver-1]         </torsional>
+1743217958.5845723 [gzserver-1]         <ode/>
+1743217958.5845916 [gzserver-1]       </friction>
+1743217958.5846107 [gzserver-1]     </surface>
+1743217958.6127467 [gzserver-1]   </collision>
+1743217958.6148202 [gzserver-1]   <visual name='front_left_leg'>
+1743217958.6148927 [gzserver-1]     <pose>0.68 0.38 0.5 0 -0 0</pose>
+1743217958.6149180 [gzserver-1]     <geometry>
+1743217958.6149402 [gzserver-1]       <cylinder>
+1743217958.6149611 [gzserver-1]         <radius>0.02</radius>
+1743217958.6149819 [gzserver-1]         <length>1</length>
+1743217958.6150026 [gzserver-1]       </cylinder>
+1743217958.6150224 [gzserver-1]     </geometry>
+1743217958.6150422 [gzserver-1]     <material>
+1743217958.6150618 [gzserver-1]       <script>
+1743217958.6150815 [gzserver-1]         <uri>file://media/materials/scripts/gazebo.material</uri>
+1743217958.6151025 [gzserver-1]         <name>Gazebo/Grey</name>
+1743217958.6151230 [gzserver-1]       </script>
+1743217958.6151428 [gzserver-1]     </material>
+1743217958.6151626 [gzserver-1]   </visual>
+1743217958.6151822 [gzserver-1]   <collision name='front_right_leg'>
+1743217958.6152015 [gzserver-1]     <pose>0.68 -0.38 0.5 0 -0 0</pose>
+1743217958.6152213 [gzserver-1]     <geometry>
+1743217958.6152420 [gzserver-1]       <cylinder>
+1743217958.6152618 [gzserver-1]         <radius>0.02</radius>
+1743217958.6152816 [gzserver-1]         <length>1</length>
+1743217958.6153016 [gzserver-1]       </cylinder>
+1743217958.6153214 [gzserver-1]     </geometry>
+1743217958.6153405 [gzserver-1]     <max_contacts>10</max_contacts>
+1743217958.6153729 [gzserver-1]     <surface>
+1743217958.6153932 [gzserver-1]       <contact>
+1743217958.6154130 [gzserver-1]         <ode/>
+1743217958.6154332 [gzserver-1]       </contact>
+1743217958.6154532 [gzserver-1]       <bounce/>
+1743217958.6154721 [gzserver-1]       <friction>
+1743217958.6155288 [gzserver-1]         <torsional>
+1743217958.6155546 [gzserver-1]           <ode/>
+1743217958.6155744 [gzserver-1]         </torsional>
+1743217958.6155949 [gzserver-1]         <ode/>
+1743217958.6156147 [gzserver-1]       </friction>
+1743217958.6156344 [gzserver-1]     </surface>
+1743217958.6156540 [gzserver-1]   </collision>
+1743217958.6156900 [gzserver-1]   <visual name='front_right_leg'>
+1743217958.6157115 [gzserver-1]     <pose>0.68 -0.38 0.5 0 -0 0</pose>
+1743217958.6157312 [gzserver-1]     <geometry>
+1743217958.6157506 [gzserver-1]       <cylinder>
+1743217958.6157701 [gzserver-1]         <radius>0.02</radius>
+1743217958.6157897 [gzserver-1]         <length>1</length>
+1743217958.6158090 [gzserver-1]       </cylinder>
+1743217958.6158285 [gzserver-1]     </geometry>
+1743217958.6158469 [gzserver-1]     <material>
+1743217958.6158826 [gzserver-1]       <script>
+1743217958.6159027 [gzserver-1]         <uri>file://media/materials/scripts/gazebo.material</uri>
+1743217958.6159229 [gzserver-1]         <name>Gazebo/Grey</name>
+1743217958.6159425 [gzserver-1]       </script>
+1743217958.6159611 [gzserver-1]     </material>
+1743217958.6159794 [gzserver-1]   </visual>
+1743217958.6159987 [gzserver-1]   <collision name='back_right_leg'>
+1743217958.6160181 [gzserver-1]     <pose>-0.68 -0.38 0.5 0 -0 0</pose>
+1743217958.6160381 [gzserver-1]     <geometry>
+1743217958.6160579 [gzserver-1]       <cylinder>
+1743217958.6160777 [gzserver-1]         <radius>0.02</radius>
+1743217958.6160975 [gzserver-1]         <length>1</length>
+1743217958.6161175 [gzserver-1]       </cylinder>
+1743217958.6161368 [gzserver-1]     </geometry>
+1743217958.6161556 [gzserver-1]     <max_contacts>10</max_contacts>
+1743217958.6161749 [gzserver-1]     <surface>
+1743217958.6161940 [gzserver-1]       <contact>
+1743217958.6162133 [gzserver-1]         <ode/>
+1743217958.6162326 [gzserver-1]       </contact>
+1743217958.6162519 [gzserver-1]       <bounce/>
+1743217958.6162708 [gzserver-1]       <friction>
+1743217958.6162899 [gzserver-1]         <torsional>
+1743217958.6163092 [gzserver-1]           <ode/>
+1743217958.6163285 [gzserver-1]         </torsional>
+1743217958.6163478 [gzserver-1]         <ode/>
+1743217958.6163671 [gzserver-1]       </friction>
+1743217958.6163864 [gzserver-1]     </surface>
+1743217958.6164050 [gzserver-1]   </collision>
+1743217958.6164238 [gzserver-1]   <visual name='back_right_leg'>
+1743217958.6164427 [gzserver-1]     <pose>-0.68 -0.38 0.5 0 -0 0</pose>
+1743217958.6164618 [gzserver-1]     <geometry>
+1743217958.6164830 [gzserver-1]       <cylinder>
+1743217958.6165025 [gzserver-1]         <radius>0.02</radius>
+1743217958.6165223 [gzserver-1]         <length>1</length>
+1743217958.6165414 [gzserver-1]       </cylinder>
+1743217958.6165602 [gzserver-1]     </geometry>
+1743217958.6165788 [gzserver-1]     <material>
+1743217958.6165974 [gzserver-1]       <script>
+1743217958.6166160 [gzserver-1]         <uri>file://media/materials/scripts/gazebo.material</uri>
+1743217958.6166348 [gzserver-1]         <name>Gazebo/Grey</name>
+1743217958.6166537 [gzserver-1]       </script>
+1743217958.6166728 [gzserver-1]     </material>
+1743217958.6166909 [gzserver-1]   </visual>
+1743217958.6167099 [gzserver-1]   <collision name='back_left_leg'>
+1743217958.6167285 [gzserver-1]     <pose>-0.68 0.38 0.5 0 -0 0</pose>
+1743217958.6167476 [gzserver-1]     <geometry>
+1743217958.6167665 [gzserver-1]       <cylinder>
+1743217958.6167855 [gzserver-1]         <radius>0.02</radius>
+1743217958.6168048 [gzserver-1]         <length>1</length>
+1743217958.6168242 [gzserver-1]       </cylinder>
+1743217958.6168432 [gzserver-1]     </geometry>
+1743217958.6168623 [gzserver-1]     <max_contacts>10</max_contacts>
+1743217958.6168816 [gzserver-1]     <surface>
+1743217958.6169050 [gzserver-1]       <contact>
+1743217958.6169245 [gzserver-1]         <ode/>
+1743217958.6169438 [gzserver-1]       </contact>
+1743217958.6169634 [gzserver-1]       <bounce/>
+1743217958.6169829 [gzserver-1]       <friction>
+1743217958.6170025 [gzserver-1]         <torsional>
+1743217958.6170220 [gzserver-1]           <ode/>
+1743217958.6170411 [gzserver-1]         </torsional>
+1743217958.6170607 [gzserver-1]         <ode/>
+1743217958.6170800 [gzserver-1]       </friction>
+1743217958.6170988 [gzserver-1]     </surface>
+1743217958.6171191 [gzserver-1]   </collision>
+1743217958.6171379 [gzserver-1]   <visual name='back_left_leg'>
+1743217958.6171575 [gzserver-1]     <pose>-0.68 0.38 0.5 0 -0 0</pose>
+1743217958.6171761 [gzserver-1]     <geometry>
+1743217958.6171949 [gzserver-1]       <cylinder>
+1743217958.6172140 [gzserver-1]         <radius>0.02</radius>
+1743217958.6172342 [gzserver-1]         <length>1</length>
+1743217958.6172535 [gzserver-1]       </cylinder>
+1743217958.6172729 [gzserver-1]     </geometry>
+1743217958.6172924 [gzserver-1]     <material>
+1743217958.6173110 [gzserver-1]       <script>
+1743217958.6173298 [gzserver-1]         <uri>file://media/materials/scripts/gazebo.material</uri>
+1743217958.6173491 [gzserver-1]         <name>Gazebo/Grey</name>
+1743217958.6173689 [gzserver-1]       </script>
+1743217958.6173878 [gzserver-1]     </material>
+1743217958.6174066 [gzserver-1]   </visual>
+1743217958.6174254 [gzserver-1]   <self_collide>0</self_collide>
+1743217958.6174445 [gzserver-1]   <inertial>
+1743217958.6174636 [gzserver-1]     <pose>0 0 0 0 -0 0</pose>
+1743217958.6174827 [gzserver-1]     <inertia>
+1743217958.6175015 [gzserver-1]       <ixx>1</ixx>
+1743217958.6175210 [gzserver-1]       <ixy>0</ixy>
+1743217958.6175399 [gzserver-1]       <ixz>0</ixz>
+1743217958.6175592 [gzserver-1]       <iyy>1</iyy>
+1743217958.6175787 [gzserver-1]       <iyz>0</iyz>
+1743217958.6175976 [gzserver-1]       <izz>1</izz>
+1743217958.6176169 [gzserver-1]     </inertia>
+1743217958.6176362 [gzserver-1]     <mass>1</mass>
+1743217958.6176550 [gzserver-1]   </inertial>
+1743217958.6343284 [gzserver-1]   <enable_wind>0</enable_wind>
+1743217958.6353858 [gzserver-1]   <kinematic>0</kinematic>
+1743217958.6354499 [gzserver-1] </link>
+1743217958.6354961 [gzserver-1] 
+1743217959.3788240 [gzserver-1] [INFO] [1743217959.371613589] [gazebo_ros_state]: Publishing states of gazebo models at [/model_states]
+1743217959.3964365 [gzserver-1] [INFO] [1743217959.386555379] [gazebo_ros_state]: Publishing states of gazebo links at [/link_states]
+1743217959.4160903 [gzserver-1] [1;33mWarning [parser.cc:833][0m XML Attribute[link] in element[parent] not defined in SDF, ignoring.
+1743217959.4162788 [gzserver-1] [1;33mWarning [parser.cc:833][0m XML Attribute[link] in element[child] not defined in SDF, ignoring.
+1743217960.1016343 [gzserver-1] [INFO] [1743217960.099326890] [gazebo_ros_bumper_controller]: Publishing contact states to [/bumper_collisions]
+1743217960.2257779 [gzserver-1] [INFO] [1743217960.215596011] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+1743217961.2066293 [INFO] [spawn_entity.py-4]: process has finished cleanly [pid 15832]
+1743217962.7661812 [gzserver-1] [INFO] [1743217962.761106792] [camera_driver]: Publishing camera info to [/camera/camera_info]
+1743217963.0110862 [gzserver-1] [INFO] [1743217962.995126481] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.287000m]
+1743217963.0137329 [gzserver-1] [INFO] [1743217962.995164751] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+1743217963.0319932 [gzserver-1] [INFO] [1743217963.025941470] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+1743217963.0611134 [gzserver-1] [INFO] [1743217963.048458623] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+1743217963.0997036 [gzserver-1] [INFO] [1743217963.096874870] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+1743217963.2809839 [gzserver-1] [INFO] [1743217963.276802491] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+1743217963.2815888 [gzserver-1] [INFO] [1743217963.276853249] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+1743218063.7269614 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1743218063.8994787 [INFO] [robot_state_publisher-3]: process has finished cleanly [pid 15830]
+1743218063.9289150 [INFO] [map_server-6]: process has finished cleanly [pid 15836]
+1743218063.9293180 [INFO] [lifecycle_manager-8]: process has finished cleanly [pid 15841]
+1743218064.0066319 [INFO] [amcl-7]: process has finished cleanly [pid 15838]
+1743218064.3074248 [ERROR] [task2.py-9]: process has died [pid 15844, exit code 1, cmd '/home/me597/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/task2.py --ros-args -r __node:=task2_algorithm --params-file /tmp/launch_params_s26hn2bp'].
+1743218064.6891038 [INFO] [gzserver-1]: process has finished cleanly [pid 15826]
+1743218064.7845991 [INFO] [gzclient-2]: process has finished cleanly [pid 15828]
+1743218068.7676480 [ERROR] [rviz2-5]: process[rviz2-5] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1743218068.7681832 [INFO] [rviz2-5]: sending signal 'SIGTERM' to process[rviz2-5]
+1743218073.7519436 [ERROR] [rviz2-5]: process[rviz2-5] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+1743218073.7529478 [INFO] [rviz2-5]: sending signal 'SIGKILL' to process[rviz2-5]
+1743218073.7851970 [ERROR] [rviz2-5]: process has died [pid 15834, exit code -9, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/rviz/tb3_gazebo.rviz --ros-args -r __node:=rviz2'].

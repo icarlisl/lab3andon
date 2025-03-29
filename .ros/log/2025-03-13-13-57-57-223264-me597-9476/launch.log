@@ -1,0 +1,7 @@
+1741888677.2241201 [INFO] [launch]: All log files can be found below /home/me597/.ros/log/2025-03-13-13-57-57-223264-me597-9476
+1741888677.2242339 [INFO] [launch]: Default logging verbosity is set to INFO
+1741888677.3318725 [INFO] [map_server-1]: process started with pid [9477]
+1741888677.3320858 [INFO] [amcl-2]: process started with pid [9479]
+1741888677.3330569 [INFO] [lifecycle_manager-3]: process started with pid [9481]
+1741888677.3331375 [INFO] [rviz2-4]: process started with pid [9483]
+1741888677.3331971 [INFO] [auto_navigator-5]: process started with pid [9485]

@@ -1,0 +1,15 @@
+[INFO] [1743024396.508451559] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1743024396.508657819] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[INFO] [1743024396.630621225] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1743024397.452411585] [rviz2]: Trying to create a map of size 266 x 212 using 1 swatches
+[ERROR] [1743024397.459668949] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1743024431.405493360] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1078.594 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743024432.056374202] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1078.796 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743024432.737715449] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1078.998 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743024433.316416501] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1079.195 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743024433.938607837] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1079.396 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743024434.496691979] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1079.596 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743024482.473598073] [rviz2]: Setting estimate pose: Frame:map, Position(0.0873404, -0.00889342, 0), Orientation(0, 0, 0.00821885, 0.999966) = Angle: 0.0164379
+[INFO] [1743024488.616696915] [rviz2]: Setting goal pose: Frame:map, Position(4.61929, -0.431971, 0), Orientation(0, 0, 0.671708, 0.740816) = Angle: 1.47302
+[INFO] [1743024550.024954801] [rclcpp]: signal_handler(signum=2)

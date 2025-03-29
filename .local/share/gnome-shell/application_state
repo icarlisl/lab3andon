@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="org.gnome.Evince.desktop" score="0" last-seen="1743058724"/>
+    <application id="vlc.desktop" score="12" last-seen="1743274023"/>
+    <application id="org.gnome.Nautilus.desktop" score="354" last-seen="1743275366"/>
+    <application id="firefox_firefox.desktop" score="19" last-seen="1743271825"/>
+    <application id="org.gnome.Terminal.desktop" score="15953.5" last-seen="1743275366"/>
+    <application id="org.gnome.gedit.desktop" score="9482" last-seen="1743275363"/>
+    <application id="gazebo.desktop" score="35" last-seen="1743217899"/>
+    <application id="apport-gtk.desktop" score="0.5" last-seen="1743218233"/>
+    <application id="update-manager.desktop" score="123.5" last-seen="1742922229"/>
+  </context>
+</application-state>

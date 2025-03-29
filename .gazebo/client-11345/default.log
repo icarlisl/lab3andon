@@ -1,0 +1,29 @@
+Gazebo multi-robot simulator, version 11.10.2
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+(1743218485 312076004) [Msg] Waiting for master.
+(1743218485 312312163) Failed to create connection to remote host[localhost:11345]
+(1743218486 325750754) Failed to create connection to remote host[localhost:11345]
+(1743218487 333638645) Failed to create connection to remote host[localhost:11345]
+(1743218488 346595166) Failed to create connection to remote host[localhost:11345]
+(1743218489 358736470) Failed to create connection to remote host[localhost:11345]
+(1743218490 368837507) Failed to create connection to remote host[localhost:11345]
+(1743218491 384193544) Failed to create connection to remote host[localhost:11345]
+(1743218492 394202849) Failed to create connection to remote host[localhost:11345]
+(1743218493 407345329) Failed to create connection to remote host[localhost:11345]
+(1743218494 414788263) Failed to create connection to remote host[localhost:11345]
+(1743218495 423878480) Failed to create connection to remote host[localhost:11345]
+(1743218496 436067276) Failed to create connection to remote host[localhost:11345]
+(1743218497 444035097) Failed to create connection to remote host[localhost:11345]
+(1743218498 457760546) Failed to create connection to remote host[localhost:11345]
+(1743218499 467137561) Failed to create connection to remote host[localhost:11345]
+(1743218500 476721984) Failed to create connection to remote host[localhost:11345]
+(1743218501 486396432) Failed to create connection to remote host[localhost:11345]
+(1743218502 495969753) Failed to create connection to remote host[localhost:11345]
+(1743218503 511096108) Failed to create connection to remote host[localhost:11345]
+(1743218504 520402976) Failed to create connection to remote host[localhost:11345]
+(1743218505 529453181) Failed to create connection to remote host[localhost:11345]
+(1743218506 544023026) Failed to create connection to remote host[localhost:11345]

@@ -1,0 +1,6 @@
+[INFO] [1743098315.035803649] [spawn_entity]: Spawn Entity started
+[INFO] [1743098315.041718406] [spawn_entity]: Loading entity XML from file /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/models/turtlebot3_waffle/model.sdf
+[INFO] [1743098315.042440525] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[INFO] [1743098315.042624424] [spawn_entity]: Waiting for service /spawn_entity
+[INFO] [1743098318.078512930] [spawn_entity]: Calling service /spawn_entity
+[INFO] [1743098318.763941914] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [waffle]

@@ -1,0 +1,11 @@
+[INFO] [1723763265.983234023] [talker]: Publishing: 'Hello World: 1'
+[INFO] [1723763266.982322501] [talker]: Publishing: 'Hello World: 2'
+[INFO] [1723763267.983321124] [talker]: Publishing: 'Hello World: 3'
+[INFO] [1723763268.984471579] [talker]: Publishing: 'Hello World: 4'
+[INFO] [1723763269.983982974] [talker]: Publishing: 'Hello World: 5'
+[INFO] [1723763270.982945541] [talker]: Publishing: 'Hello World: 6'
+[INFO] [1723763271.982422670] [talker]: Publishing: 'Hello World: 7'
+[INFO] [1723763272.982440239] [talker]: Publishing: 'Hello World: 8'
+[INFO] [1723763273.982430372] [talker]: Publishing: 'Hello World: 9'
+[INFO] [1723763274.982377410] [talker]: Publishing: 'Hello World: 10'
+[INFO] [1723763275.562367055] [rclcpp]: signal_handler(signum=2)

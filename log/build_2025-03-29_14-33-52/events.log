@@ -1,0 +1,726 @@
+[0.000000] (-) TimerEvent: {}
+[0.001346] (cv_bridge) JobQueued: {'identifier': 'cv_bridge', 'dependencies': OrderedDict()}
+[0.001398] (image_geometry) JobQueued: {'identifier': 'image_geometry', 'dependencies': OrderedDict()}
+[0.001432] (sim_utils) JobQueued: {'identifier': 'sim_utils', 'dependencies': OrderedDict()}
+[0.001447] (task_4) JobQueued: {'identifier': 'task_4', 'dependencies': OrderedDict()}
+[0.001457] (turtlebot3_gazebo) JobQueued: {'identifier': 'turtlebot3_gazebo', 'dependencies': OrderedDict()}
+[0.001471] (opencv_tests) JobQueued: {'identifier': 'opencv_tests', 'dependencies': OrderedDict([('cv_bridge', '/home/me597/install/cv_bridge')])}
+[0.003975] (task_5) JobQueued: {'identifier': 'task_5', 'dependencies': OrderedDict([('cv_bridge', '/home/me597/install/cv_bridge')])}
+[0.004078] (vision_opencv) JobQueued: {'identifier': 'vision_opencv', 'dependencies': OrderedDict([('cv_bridge', '/home/me597/install/cv_bridge'), ('image_geometry', '/home/me597/install/image_geometry')])}
+[0.004132] (cv_bridge) JobStarted: {'identifier': 'cv_bridge'}
+[0.017010] (image_geometry) JobStarted: {'identifier': 'image_geometry'}
+[0.033479] (cv_bridge) JobProgress: {'identifier': 'cv_bridge', 'progress': 'cmake'}
+[0.033556] (cv_bridge) Command: {'cmd': ['/usr/bin/cmake', '/home/me597/ros2_ws/src/vision_opencv/cv_bridge', '-DCMAKE_INSTALL_PREFIX=/home/me597/install/cv_bridge'], 'cwd': '/home/me597/build/cv_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'me597'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/me597/ros2_ws/src/install/image_geometry/lib:/home/me597/ros2_ws/src/install/cv_bridge/lib:/home/me597/ros2_ws/install/image_geometry/lib:/home/me597/ros2_ws/install/cv_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/me597'), ('OLDPWD', '/home/me597/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1718'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/me597/ros2_ws/install:/home/me597/ros2_ws/src/task_5/install:/home/me597/install:/home/me597/ros2_ws/src/task_4/launch/install:/home/me597/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'me597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'me597'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/me597:@/tmp/.ICE-unix/1690,unix/me597:/tmp/.ICE-unix/1690'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/66baf18a_bcea_47c2_a5f7_928a1b7cceeb'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7UU232'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '05'), ('AMENT_PREFIX_PATH', '/home/me597/ros2_ws/src/task_5/install/task_5:/home/me597/ros2_ws/install/task_5:/home/me597/ros2_ws/src/install/vision_opencv:/home/me597/ros2_ws/src/install/task_5:/home/me597/ros2_ws/src/install/opencv_tests:/home/me597/ros2_ws/src/install/image_geometry:/home/me597/ros2_ws/src/install/cv_bridge:/home/me597/ros2_ws/install/vision_opencv:/home/me597/ros2_ws/install/opencv_tests:/home/me597/ros2_ws/install/image_geometry:/home/me597/ros2_ws/install/cv_bridge:/home/me597/ros2_ws/install/task_4:/home/me597/ros2_ws/src/install/task_4:/home/me597/install/turtlebot3_gazebo:/home/me597/install/task_4:/home/me597/install/sim_utils:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/me597/build/cv_bridge'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/me597/ros2_ws/src/task_5/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/opencv_tests/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/image_geometry/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/src/install/cv_bridge/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/build/task_4:/home/me597/ros2_ws/build/opencv_tests:/home/me597/ros2_ws/install/opencv_tests/lib/python3.10/site-packages:/home/me597/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/install/task_4/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/task_4/lib/python3.10/site-packages:/home/me597/install/task_4/lib/python3.10/site-packages:/home/me597/install/sim_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/me597/ros2_ws/src/install/vision_opencv:/home/me597/ros2_ws/src/install/image_geometry:/home/me597/ros2_ws/src/install/cv_bridge:/home/me597/ros2_ws/install/vision_opencv:/home/me597/ros2_ws/install/image_geometry:/home/me597/ros2_ws/install/cv_bridge:/home/me597/install/turtlebot3_gazebo:/home/me597/ros2_ws/src/task_5/install/task_5:/home/me597/ros2_ws/install/task_5:/home/me597/ros2_ws/src/install/task_5:/home/me597/ros2_ws/src/install/opencv_tests:/home/me597/ros2_ws/install/opencv_tests:/home/me597/ros2_ws/install/task_4:/home/me597/ros2_ws/src/install/task_4:/home/me597/install/task_4:/home/me597/install/sim_utils:/opt/ros/humble')]), 'shell': False}
+[0.040786] (image_geometry) JobProgress: {'identifier': 'image_geometry', 'progress': 'cmake'}
+[0.047504] (image_geometry) Command: {'cmd': ['/usr/bin/cmake', '/home/me597/ros2_ws/src/vision_opencv/image_geometry', '-DCMAKE_INSTALL_PREFIX=/home/me597/install/image_geometry'], 'cwd': '/home/me597/build/image_geometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'me597'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/me597/ros2_ws/src/install/image_geometry/lib:/home/me597/ros2_ws/src/install/cv_bridge/lib:/home/me597/ros2_ws/install/image_geometry/lib:/home/me597/ros2_ws/install/cv_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/me597'), ('OLDPWD', '/home/me597/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1718'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/me597/ros2_ws/install:/home/me597/ros2_ws/src/task_5/install:/home/me597/install:/home/me597/ros2_ws/src/task_4/launch/install:/home/me597/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'me597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'me597'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/me597:@/tmp/.ICE-unix/1690,unix/me597:/tmp/.ICE-unix/1690'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/66baf18a_bcea_47c2_a5f7_928a1b7cceeb'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7UU232'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '05'), ('AMENT_PREFIX_PATH', '/home/me597/ros2_ws/src/task_5/install/task_5:/home/me597/ros2_ws/install/task_5:/home/me597/ros2_ws/src/install/vision_opencv:/home/me597/ros2_ws/src/install/task_5:/home/me597/ros2_ws/src/install/opencv_tests:/home/me597/ros2_ws/src/install/image_geometry:/home/me597/ros2_ws/src/install/cv_bridge:/home/me597/ros2_ws/install/vision_opencv:/home/me597/ros2_ws/install/opencv_tests:/home/me597/ros2_ws/install/image_geometry:/home/me597/ros2_ws/install/cv_bridge:/home/me597/ros2_ws/install/task_4:/home/me597/ros2_ws/src/install/task_4:/home/me597/install/turtlebot3_gazebo:/home/me597/install/task_4:/home/me597/install/sim_utils:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/me597/build/image_geometry'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/me597/ros2_ws/src/task_5/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/opencv_tests/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/image_geometry/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/src/install/cv_bridge/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/build/task_4:/home/me597/ros2_ws/build/opencv_tests:/home/me597/ros2_ws/install/opencv_tests/lib/python3.10/site-packages:/home/me597/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/install/task_4/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/task_4/lib/python3.10/site-packages:/home/me597/install/task_4/lib/python3.10/site-packages:/home/me597/install/sim_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/me597/ros2_ws/src/install/vision_opencv:/home/me597/ros2_ws/src/install/image_geometry:/home/me597/ros2_ws/src/install/cv_bridge:/home/me597/ros2_ws/install/vision_opencv:/home/me597/ros2_ws/install/image_geometry:/home/me597/ros2_ws/install/cv_bridge:/home/me597/install/turtlebot3_gazebo:/home/me597/ros2_ws/src/task_5/install/task_5:/home/me597/ros2_ws/install/task_5:/home/me597/ros2_ws/src/install/task_5:/home/me597/ros2_ws/src/install/opencv_tests:/home/me597/ros2_ws/install/opencv_tests:/home/me597/ros2_ws/install/task_4:/home/me597/ros2_ws/src/install/task_4:/home/me597/install/task_4:/home/me597/install/sim_utils:/opt/ros/humble')]), 'shell': False}
+[0.102158] (cv_bridge) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.102505] (-) TimerEvent: {}
+[0.102704] (image_geometry) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.180815] (image_geometry) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.190452] (image_geometry) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.194458] (cv_bridge) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.202578] (cv_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.202709] (-) TimerEvent: {}
+[0.291054] (cv_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.299172] (cv_bridge) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.299493] (cv_bridge) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.300347] (cv_bridge) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.303220] (-) TimerEvent: {}
+[0.305522] (cv_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.308338] (image_geometry) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.314119] (image_geometry) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.314227] (image_geometry) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.315022] (image_geometry) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.317768] (image_geometry) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.396583] (cv_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.403741] (cv_bridge) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.403994] (-) TimerEvent: {}
+[0.404503] (cv_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.405147] (cv_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.408171] (cv_bridge) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.413487] (image_geometry) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.423661] (image_geometry) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.423800] (image_geometry) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.423881] (image_geometry) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.426605] (image_geometry) StdoutLine: {'line': b'-- Found ament_cmake_python: 1.3.11 (/opt/ros/humble/share/ament_cmake_python/cmake)\n'}
+[0.429137] (image_geometry) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.504338] (-) TimerEvent: {}
+[0.604843] (-) TimerEvent: {}
+[0.641804] (cv_bridge) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.666537] (image_geometry) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.705240] (-) TimerEvent: {}
+[0.805656] (-) TimerEvent: {}
+[0.906330] (-) TimerEvent: {}
+[0.941495] (image_geometry) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") found components: calib3d core highgui imgproc \n'}
+[0.943670] (image_geometry) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.986425] (image_geometry) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.991777] (image_geometry) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.007353] (image_geometry) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.007518] (-) TimerEvent: {}
+[1.025499] (image_geometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.046502] (image_geometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.108172] (-) TimerEvent: {}
+[1.208994] (-) TimerEvent: {}
+[1.309392] (-) TimerEvent: {}
+[1.325303] (cv_bridge) StdoutLine: {'line': b'-- Found Python3: /usr/include/python3.10 (found version "3.10.12") found components: Development NumPy Interpreter Development.Module Development.Embed \n'}
+[1.350751] (cv_bridge) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: python310 \n'}
+[1.356225] (cv_bridge) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.397704] (cv_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.404008] (cv_bridge) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.409646] (-) TimerEvent: {}
+[1.414448] (cv_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.427268] (cv_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.462076] (cv_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.465817] (image_geometry) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[1.469473] (image_geometry) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.509879] (-) TimerEvent: {}
+[1.518813] (cv_bridge) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.524590] (cv_bridge) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.572902] (image_geometry) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.573169] (image_geometry) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.610300] (-) TimerEvent: {}
+[1.634973] (cv_bridge) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.660588] (image_geometry) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.660914] (image_geometry) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.681511] (cv_bridge) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.710485] (-) TimerEvent: {}
+[1.720282] (cv_bridge) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.729828] (cv_bridge) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.740464] (image_geometry) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.762385] (image_geometry) StdoutLine: {'line': b'-- Generating done\n'}
+[1.768789] (image_geometry) StdoutLine: {'line': b'-- Build files have been written to: /home/me597/build/image_geometry\n'}
+[1.781827] (image_geometry) CommandEnded: {'returncode': 0}
+[1.782528] (image_geometry) JobProgress: {'identifier': 'image_geometry', 'progress': 'build'}
+[1.782632] (image_geometry) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/me597/build/image_geometry', '--', '-j2', '-l2'], 'cwd': '/home/me597/build/image_geometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'me597'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/me597/ros2_ws/src/install/image_geometry/lib:/home/me597/ros2_ws/src/install/cv_bridge/lib:/home/me597/ros2_ws/install/image_geometry/lib:/home/me597/ros2_ws/install/cv_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/me597'), ('OLDPWD', '/home/me597/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1718'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/me597/ros2_ws/install:/home/me597/ros2_ws/src/task_5/install:/home/me597/install:/home/me597/ros2_ws/src/task_4/launch/install:/home/me597/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'me597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'me597'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/me597:@/tmp/.ICE-unix/1690,unix/me597:/tmp/.ICE-unix/1690'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/66baf18a_bcea_47c2_a5f7_928a1b7cceeb'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7UU232'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '05'), ('AMENT_PREFIX_PATH', '/home/me597/ros2_ws/src/task_5/install/task_5:/home/me597/ros2_ws/install/task_5:/home/me597/ros2_ws/src/install/vision_opencv:/home/me597/ros2_ws/src/install/task_5:/home/me597/ros2_ws/src/install/opencv_tests:/home/me597/ros2_ws/src/install/image_geometry:/home/me597/ros2_ws/src/install/cv_bridge:/home/me597/ros2_ws/install/vision_opencv:/home/me597/ros2_ws/install/opencv_tests:/home/me597/ros2_ws/install/image_geometry:/home/me597/ros2_ws/install/cv_bridge:/home/me597/ros2_ws/install/task_4:/home/me597/ros2_ws/src/install/task_4:/home/me597/install/turtlebot3_gazebo:/home/me597/install/task_4:/home/me597/install/sim_utils:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/me597/build/image_geometry'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/me597/ros2_ws/src/task_5/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/opencv_tests/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/image_geometry/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/src/install/cv_bridge/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/build/task_4:/home/me597/ros2_ws/build/opencv_tests:/home/me597/ros2_ws/install/opencv_tests/lib/python3.10/site-packages:/home/me597/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/install/task_4/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/task_4/lib/python3.10/site-packages:/home/me597/install/task_4/lib/python3.10/site-packages:/home/me597/install/sim_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/me597/ros2_ws/src/install/vision_opencv:/home/me597/ros2_ws/src/install/image_geometry:/home/me597/ros2_ws/src/install/cv_bridge:/home/me597/ros2_ws/install/vision_opencv:/home/me597/ros2_ws/install/image_geometry:/home/me597/ros2_ws/install/cv_bridge:/home/me597/install/turtlebot3_gazebo:/home/me597/ros2_ws/src/task_5/install/task_5:/home/me597/ros2_ws/install/task_5:/home/me597/ros2_ws/src/install/task_5:/home/me597/ros2_ws/src/install/opencv_tests:/home/me597/ros2_ws/install/opencv_tests:/home/me597/ros2_ws/install/task_4:/home/me597/ros2_ws/src/install/task_4:/home/me597/install/task_4:/home/me597/install/sim_utils:/opt/ros/humble')]), 'shell': False}
+[1.811325] (-) TimerEvent: {}
+[1.819232] (cv_bridge) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.820549] (cv_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.861496] (image_geometry) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/image_geometry.dir/src/pinhole_camera_model.cpp.o\x1b[0m\n'}
+[1.878995] (image_geometry) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_copy_image_geometry\n'}
+[1.912304] (-) TimerEvent: {}
+[1.924371] (image_geometry) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[1.928845] (cv_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.934856] (cv_bridge) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.007055] (cv_bridge) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.012588] (-) TimerEvent: {}
+[2.113249] (-) TimerEvent: {}
+[2.213994] (-) TimerEvent: {}
+[2.237571] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY\n'}
+[2.314456] (-) TimerEvent: {}
+[2.415543] (-) TimerEvent: {}
+[2.466968] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success\n'}
+[2.469406] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY\n'}
+[2.516063] (-) TimerEvent: {}
+[2.616503] (-) TimerEvent: {}
+[2.669752] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success\n'}
+[2.674451] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_DEPRECATED_ATTR\n'}
+[2.717030] (-) TimerEvent: {}
+[2.817908] (-) TimerEvent: {}
+[2.875754] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success\n'}
+[2.889567] (cv_bridge) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.918030] (-) TimerEvent: {}
+[3.020219] (-) TimerEvent: {}
+[3.072637] (cv_bridge) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[3.120503] (-) TimerEvent: {}
+[3.221002] (-) TimerEvent: {}
+[3.322469] (-) TimerEvent: {}
+[3.423685] (-) TimerEvent: {}
+[3.527561] (-) TimerEvent: {}
+[3.591931] (image_geometry) StdoutLine: {'line': b'[ 27%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[3.631272] (-) TimerEvent: {}
+[3.677990] (image_geometry) StdoutLine: {'line': b'[ 27%] Built target gtest_main\n'}
+[3.724017] (image_geometry) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[3.731667] (-) TimerEvent: {}
+[3.833465] (-) TimerEvent: {}
+[3.933822] (-) TimerEvent: {}
+[4.035567] (-) TimerEvent: {}
+[4.137596] (-) TimerEvent: {}
+[4.238215] (-) TimerEvent: {}
+[4.338567] (-) TimerEvent: {}
+[4.439039] (-) TimerEvent: {}
+[4.446106] (image_geometry) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/image_geometry.dir/src/stereo_camera_model.cpp.o\x1b[0m\n'}
+[4.540399] (-) TimerEvent: {}
+[4.641330] (-) TimerEvent: {}
+[4.742076] (-) TimerEvent: {}
+[4.844537] (-) TimerEvent: {}
+[4.945035] (-) TimerEvent: {}
+[5.046353] (-) TimerEvent: {}
+[5.146892] (-) TimerEvent: {}
+[5.159782] (cv_bridge) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.192426] (cv_bridge) StdoutLine: {'line': b'-- Generating done\n'}
+[5.223357] (cv_bridge) StdoutLine: {'line': b'-- Build files have been written to: /home/me597/build/cv_bridge\n'}
+[5.247080] (-) TimerEvent: {}
+[5.259371] (cv_bridge) CommandEnded: {'returncode': 0}
+[5.260272] (cv_bridge) JobProgress: {'identifier': 'cv_bridge', 'progress': 'build'}
+[5.260362] (cv_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/me597/build/cv_bridge', '--', '-j2', '-l2'], 'cwd': '/home/me597/build/cv_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'me597'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/me597/ros2_ws/src/install/image_geometry/lib:/home/me597/ros2_ws/src/install/cv_bridge/lib:/home/me597/ros2_ws/install/image_geometry/lib:/home/me597/ros2_ws/install/cv_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/me597'), ('OLDPWD', '/home/me597/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1718'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/me597/ros2_ws/install:/home/me597/ros2_ws/src/task_5/install:/home/me597/install:/home/me597/ros2_ws/src/task_4/launch/install:/home/me597/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'me597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'me597'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/me597:@/tmp/.ICE-unix/1690,unix/me597:/tmp/.ICE-unix/1690'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/66baf18a_bcea_47c2_a5f7_928a1b7cceeb'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7UU232'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '05'), ('AMENT_PREFIX_PATH', '/home/me597/ros2_ws/src/task_5/install/task_5:/home/me597/ros2_ws/install/task_5:/home/me597/ros2_ws/src/install/vision_opencv:/home/me597/ros2_ws/src/install/task_5:/home/me597/ros2_ws/src/install/opencv_tests:/home/me597/ros2_ws/src/install/image_geometry:/home/me597/ros2_ws/src/install/cv_bridge:/home/me597/ros2_ws/install/vision_opencv:/home/me597/ros2_ws/install/opencv_tests:/home/me597/ros2_ws/install/image_geometry:/home/me597/ros2_ws/install/cv_bridge:/home/me597/ros2_ws/install/task_4:/home/me597/ros2_ws/src/install/task_4:/home/me597/install/turtlebot3_gazebo:/home/me597/install/task_4:/home/me597/install/sim_utils:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/me597/build/cv_bridge'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/me597/ros2_ws/src/task_5/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/opencv_tests/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/image_geometry/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/src/install/cv_bridge/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/build/task_4:/home/me597/ros2_ws/build/opencv_tests:/home/me597/ros2_ws/install/opencv_tests/lib/python3.10/site-packages:/home/me597/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/install/task_4/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/task_4/lib/python3.10/site-packages:/home/me597/install/task_4/lib/python3.10/site-packages:/home/me597/install/sim_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/me597/ros2_ws/src/install/vision_opencv:/home/me597/ros2_ws/src/install/image_geometry:/home/me597/ros2_ws/src/install/cv_bridge:/home/me597/ros2_ws/install/vision_opencv:/home/me597/ros2_ws/install/image_geometry:/home/me597/ros2_ws/install/cv_bridge:/home/me597/install/turtlebot3_gazebo:/home/me597/ros2_ws/src/task_5/install/task_5:/home/me597/ros2_ws/install/task_5:/home/me597/ros2_ws/src/install/task_5:/home/me597/ros2_ws/src/install/opencv_tests:/home/me597/ros2_ws/install/opencv_tests:/home/me597/ros2_ws/install/task_4:/home/me597/ros2_ws/src/install/task_4:/home/me597/install/task_4:/home/me597/install/sim_utils:/opt/ros/humble')]), 'shell': False}
+[5.349241] (-) TimerEvent: {}
+[5.394422] (cv_bridge) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/cv_bridge.cpp.o\x1b[0m\n'}
+[5.431418] (cv_bridge) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_cv_bridge\n'}
+[5.449695] (cv_bridge) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/cv_mat_sensor_msgs_image_type_adapter.cpp.o\x1b[0m\n'}
+[5.449883] (-) TimerEvent: {}
+[5.552258] (-) TimerEvent: {}
+[5.652874] (-) TimerEvent: {}
+[5.753531] (-) TimerEvent: {}
+[5.855569] (-) TimerEvent: {}
+[5.958421] (-) TimerEvent: {}
+[6.059213] (-) TimerEvent: {}
+[6.160419] (-) TimerEvent: {}
+[6.261016] (-) TimerEvent: {}
+[6.361852] (-) TimerEvent: {}
+[6.463306] (-) TimerEvent: {}
+[6.564073] (-) TimerEvent: {}
+[6.664608] (-) TimerEvent: {}
+[6.769272] (-) TimerEvent: {}
+[6.870004] (-) TimerEvent: {}
+[6.905624] (image_geometry) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libimage_geometry.so\x1b[0m\n'}
+[6.970436] (-) TimerEvent: {}
+[7.071100] (-) TimerEvent: {}
+[7.171610] (-) TimerEvent: {}
+[7.204391] (image_geometry) StdoutLine: {'line': b'[ 54%] Built target image_geometry\n'}
+[7.274680] (-) TimerEvent: {}
+[7.375647] (-) TimerEvent: {}
+[7.476697] (-) TimerEvent: {}
+[7.580261] (-) TimerEvent: {}
+[7.681007] (-) TimerEvent: {}
+[7.781315] (-) TimerEvent: {}
+[7.881786] (-) TimerEvent: {}
+[7.886294] (image_geometry) StdoutLine: {'line': b'running egg_info\n'}
+[7.887291] (image_geometry) StdoutLine: {'line': b'creating image_geometry.egg-info\n'}
+[7.889544] (image_geometry) StdoutLine: {'line': b'writing image_geometry.egg-info/PKG-INFO\n'}
+[7.889696] (image_geometry) StdoutLine: {'line': b'writing dependency_links to image_geometry.egg-info/dependency_links.txt\n'}
+[7.890007] (image_geometry) StdoutLine: {'line': b'writing top-level names to image_geometry.egg-info/top_level.txt\n'}
+[7.890156] (image_geometry) StdoutLine: {'line': b"writing manifest file 'image_geometry.egg-info/SOURCES.txt'\n"}
+[7.894576] (image_geometry) StdoutLine: {'line': b"reading manifest file 'image_geometry.egg-info/SOURCES.txt'\n"}
+[7.896374] (image_geometry) StdoutLine: {'line': b"writing manifest file 'image_geometry.egg-info/SOURCES.txt'\n"}
+[7.967419] (image_geometry) StdoutLine: {'line': b'[ 54%] Built target ament_cmake_python_build_image_geometry_egg\n'}
+[7.982183] (-) TimerEvent: {}
+[8.034384] (cv_bridge) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[8.083246] (-) TimerEvent: {}
+[8.186263] (-) TimerEvent: {}
+[8.286610] (-) TimerEvent: {}
+[8.387208] (-) TimerEvent: {}
+[8.487990] (-) TimerEvent: {}
+[8.588517] (-) TimerEvent: {}
+[8.689110] (-) TimerEvent: {}
+[8.791297] (-) TimerEvent: {}
+[8.891771] (-) TimerEvent: {}
+[8.993568] (-) TimerEvent: {}
+[9.094066] (-) TimerEvent: {}
+[9.195318] (-) TimerEvent: {}
+[9.296296] (-) TimerEvent: {}
+[9.309885] (cv_bridge) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[9.391360] (cv_bridge) StdoutLine: {'line': b'[ 22%] Built target gtest_main\n'}
+[9.396486] (-) TimerEvent: {}
+[9.444614] (cv_bridge) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[9.498322] (-) TimerEvent: {}
+[9.598802] (-) TimerEvent: {}
+[9.699280] (-) TimerEvent: {}
+[9.801522] (-) TimerEvent: {}
+[9.902050] (-) TimerEvent: {}
+[10.003079] (-) TimerEvent: {}
+[10.103738] (-) TimerEvent: {}
+[10.205267] (-) TimerEvent: {}
+[10.305833] (-) TimerEvent: {}
+[10.407255] (-) TimerEvent: {}
+[10.507758] (-) TimerEvent: {}
+[10.608321] (-) TimerEvent: {}
+[10.710008] (-) TimerEvent: {}
+[10.810430] (-) TimerEvent: {}
+[10.912838] (-) TimerEvent: {}
+[11.014497] (-) TimerEvent: {}
+[11.027800] (image_geometry) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[11.098285] (image_geometry) StdoutLine: {'line': b'[ 63%] Built target gtest\n'}
+[11.114911] (-) TimerEvent: {}
+[11.154629] (image_geometry) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object test/CMakeFiles/image_geometry-utest.dir/utest.cpp.o\x1b[0m\n'}
+[11.183371] (image_geometry) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object test/CMakeFiles/image_geometry-utest-equi.dir/utest_equi.cpp.o\x1b[0m\n'}
+[11.215075] (-) TimerEvent: {}
+[11.315651] (-) TimerEvent: {}
+[11.418665] (-) TimerEvent: {}
+[11.519990] (-) TimerEvent: {}
+[11.621355] (-) TimerEvent: {}
+[11.721763] (-) TimerEvent: {}
+[11.822425] (-) TimerEvent: {}
+[11.923028] (-) TimerEvent: {}
+[12.025247] (-) TimerEvent: {}
+[12.128432] (-) TimerEvent: {}
+[12.228911] (-) TimerEvent: {}
+[12.331259] (-) TimerEvent: {}
+[12.431715] (-) TimerEvent: {}
+[12.532212] (-) TimerEvent: {}
+[12.632771] (-) TimerEvent: {}
+[12.733225] (-) TimerEvent: {}
+[12.835414] (-) TimerEvent: {}
+[12.935822] (-) TimerEvent: {}
+[13.039263] (-) TimerEvent: {}
+[13.139717] (-) TimerEvent: {}
+[13.241489] (-) TimerEvent: {}
+[13.343364] (-) TimerEvent: {}
+[13.443740] (-) TimerEvent: {}
+[13.545273] (-) TimerEvent: {}
+[13.645736] (-) TimerEvent: {}
+[13.746151] (-) TimerEvent: {}
+[13.853831] (-) TimerEvent: {}
+[13.954228] (-) TimerEvent: {}
+[14.054774] (-) TimerEvent: {}
+[14.158278] (-) TimerEvent: {}
+[14.258658] (-) TimerEvent: {}
+[14.359147] (-) TimerEvent: {}
+[14.461278] (-) TimerEvent: {}
+[14.561707] (-) TimerEvent: {}
+[14.662138] (-) TimerEvent: {}
+[14.764330] (-) TimerEvent: {}
+[14.864886] (-) TimerEvent: {}
+[14.965420] (-) TimerEvent: {}
+[15.068267] (-) TimerEvent: {}
+[15.170230] (-) TimerEvent: {}
+[15.272317] (-) TimerEvent: {}
+[15.372757] (-) TimerEvent: {}
+[15.473149] (-) TimerEvent: {}
+[15.573732] (-) TimerEvent: {}
+[15.674127] (-) TimerEvent: {}
+[15.775323] (-) TimerEvent: {}
+[15.877600] (-) TimerEvent: {}
+[15.979272] (-) TimerEvent: {}
+[16.079758] (-) TimerEvent: {}
+[16.181018] (-) TimerEvent: {}
+[16.279391] (cv_bridge) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/rgb_colors.cpp.o\x1b[0m\n'}
+[16.281317] (-) TimerEvent: {}
+[16.381673] (-) TimerEvent: {}
+[16.482219] (-) TimerEvent: {}
+[16.584252] (-) TimerEvent: {}
+[16.684656] (-) TimerEvent: {}
+[16.787440] (-) TimerEvent: {}
+[16.867217] (image_geometry) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable image_geometry-utest-equi\x1b[0m\n'}
+[16.888085] (-) TimerEvent: {}
+[16.989606] (-) TimerEvent: {}
+[17.007833] (image_geometry) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable image_geometry-utest\x1b[0m\n'}
+[17.091451] (-) TimerEvent: {}
+[17.192184] (-) TimerEvent: {}
+[17.295662] (-) TimerEvent: {}
+[17.350491] (image_geometry) StdoutLine: {'line': b'[100%] Built target image_geometry-utest\n'}
+[17.361673] (image_geometry) StdoutLine: {'line': b'[100%] Built target image_geometry-utest-equi\n'}
+[17.384122] (image_geometry) CommandEnded: {'returncode': 0}
+[17.393935] (image_geometry) JobProgress: {'identifier': 'image_geometry', 'progress': 'install'}
+[17.395769] (-) TimerEvent: {}
+[17.414578] (image_geometry) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/me597/build/image_geometry'], 'cwd': '/home/me597/build/image_geometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'me597'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/me597/ros2_ws/src/install/image_geometry/lib:/home/me597/ros2_ws/src/install/cv_bridge/lib:/home/me597/ros2_ws/install/image_geometry/lib:/home/me597/ros2_ws/install/cv_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/me597'), ('OLDPWD', '/home/me597/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1718'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/me597/ros2_ws/install:/home/me597/ros2_ws/src/task_5/install:/home/me597/install:/home/me597/ros2_ws/src/task_4/launch/install:/home/me597/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'me597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'me597'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/me597:@/tmp/.ICE-unix/1690,unix/me597:/tmp/.ICE-unix/1690'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/66baf18a_bcea_47c2_a5f7_928a1b7cceeb'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7UU232'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '05'), ('AMENT_PREFIX_PATH', '/home/me597/ros2_ws/src/task_5/install/task_5:/home/me597/ros2_ws/install/task_5:/home/me597/ros2_ws/src/install/vision_opencv:/home/me597/ros2_ws/src/install/task_5:/home/me597/ros2_ws/src/install/opencv_tests:/home/me597/ros2_ws/src/install/image_geometry:/home/me597/ros2_ws/src/install/cv_bridge:/home/me597/ros2_ws/install/vision_opencv:/home/me597/ros2_ws/install/opencv_tests:/home/me597/ros2_ws/install/image_geometry:/home/me597/ros2_ws/install/cv_bridge:/home/me597/ros2_ws/install/task_4:/home/me597/ros2_ws/src/install/task_4:/home/me597/install/turtlebot3_gazebo:/home/me597/install/task_4:/home/me597/install/sim_utils:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/me597/build/image_geometry'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/me597/ros2_ws/src/task_5/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/opencv_tests/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/image_geometry/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/src/install/cv_bridge/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/build/task_4:/home/me597/ros2_ws/build/opencv_tests:/home/me597/ros2_ws/install/opencv_tests/lib/python3.10/site-packages:/home/me597/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/install/task_4/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/task_4/lib/python3.10/site-packages:/home/me597/install/task_4/lib/python3.10/site-packages:/home/me597/install/sim_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/me597/ros2_ws/src/install/vision_opencv:/home/me597/ros2_ws/src/install/image_geometry:/home/me597/ros2_ws/src/install/cv_bridge:/home/me597/ros2_ws/install/vision_opencv:/home/me597/ros2_ws/install/image_geometry:/home/me597/ros2_ws/install/cv_bridge:/home/me597/install/turtlebot3_gazebo:/home/me597/ros2_ws/src/task_5/install/task_5:/home/me597/ros2_ws/install/task_5:/home/me597/ros2_ws/src/install/task_5:/home/me597/ros2_ws/src/install/opencv_tests:/home/me597/ros2_ws/install/opencv_tests:/home/me597/ros2_ws/install/task_4:/home/me597/ros2_ws/src/install/task_4:/home/me597/install/task_4:/home/me597/install/sim_utils:/opt/ros/humble')]), 'shell': False}
+[17.445175] (image_geometry) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.446551] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/image_geometry/environment/pythonpath.sh\n'}
+[17.446772] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/image_geometry/environment/pythonpath.dsv\n'}
+[17.447037] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info\n'}
+[17.448865] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/top_level.txt\n'}
+[17.449036] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[17.449176] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[17.450215] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/PKG-INFO\n'}
+[17.450314] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry\n'}
+[17.450362] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/cameramodels.py\n'}
+[17.450410] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/__init__.py\n'}
+[17.498466] (-) TimerEvent: {}
+[17.562328] (image_geometry) StdoutLine: {'line': b"Listing '/home/me597/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry'...\n"}
+[17.562556] (image_geometry) StdoutLine: {'line': b"Compiling '/home/me597/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/__init__.py'...\n"}
+[17.562618] (image_geometry) StdoutLine: {'line': b"Compiling '/home/me597/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/cameramodels.py'...\n"}
+[17.575391] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/include/image_geometry\n'}
+[17.575572] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/include/image_geometry/image_geometry\n'}
+[17.575668] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/include/image_geometry/image_geometry/pinhole_camera_model.hpp\n'}
+[17.575725] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/include/image_geometry/image_geometry/stereo_camera_model.hpp\n'}
+[17.575795] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/include/image_geometry/image_geometry/visibility_control.hpp\n'}
+[17.575839] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/lib/libimage_geometry.so\n'}
+[17.576134] (image_geometry) StdoutLine: {'line': b'-- Set runtime path of "/home/me597/install/image_geometry/lib/libimage_geometry.so" to ""\n'}
+[17.577471] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/ament_index/resource_index/package_run_dependencies/image_geometry\n'}
+[17.577839] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/ament_index/resource_index/parent_prefix_path/image_geometry\n'}
+[17.580345] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/image_geometry/environment/ament_prefix_path.sh\n'}
+[17.580573] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/image_geometry/environment/ament_prefix_path.dsv\n'}
+[17.580677] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/image_geometry/environment/path.sh\n'}
+[17.580756] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/image_geometry/environment/path.dsv\n'}
+[17.580840] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/image_geometry/local_setup.bash\n'}
+[17.580914] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/image_geometry/local_setup.sh\n'}
+[17.581010] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/image_geometry/local_setup.zsh\n'}
+[17.581113] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/image_geometry/local_setup.dsv\n'}
+[17.585246] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/image_geometry/package.dsv\n'}
+[17.585408] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/ament_index/resource_index/packages/image_geometry\n'}
+[17.585458] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/image_geometry/cmake/export_image_geometryExport.cmake\n'}
+[17.585501] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/image_geometry/cmake/export_image_geometryExport-noconfig.cmake\n'}
+[17.585559] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[17.585628] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[17.585672] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/image_geometry/cmake/image_geometryConfig.cmake\n'}
+[17.585713] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/image_geometry/cmake/image_geometryConfig-version.cmake\n'}
+[17.585789] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/me597/install/image_geometry/share/image_geometry/package.xml\n'}
+[17.595674] (image_geometry) CommandEnded: {'returncode': 0}
+[17.600257] (-) TimerEvent: {}
+[17.662149] (image_geometry) JobEnded: {'identifier': 'image_geometry', 'rc': 0}
+[17.662698] (sim_utils) JobStarted: {'identifier': 'sim_utils'}
+[17.700715] (-) TimerEvent: {}
+[17.801413] (-) TimerEvent: {}
+[17.901925] (-) TimerEvent: {}
+[18.002309] (-) TimerEvent: {}
+[18.104528] (-) TimerEvent: {}
+[18.205072] (-) TimerEvent: {}
+[18.306107] (cv_bridge) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[18.306361] (-) TimerEvent: {}
+[18.410463] (-) TimerEvent: {}
+[18.424146] (cv_bridge) StdoutLine: {'line': b'[ 38%] Built target gtest\n'}
+[18.510942] (-) TimerEvent: {}
+[18.611782] (-) TimerEvent: {}
+[18.713451] (-) TimerEvent: {}
+[18.815464] (-) TimerEvent: {}
+[18.843451] (sim_utils) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/sim_utils', 'build', '--build-base', '/home/me597/build/sim_utils/build', 'install', '--record', '/home/me597/build/sim_utils/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/me597/sim_ws/src/sim_utils', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'me597', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/me597/ros2_ws/src/install/image_geometry/lib:/home/me597/ros2_ws/src/install/cv_bridge/lib:/home/me597/ros2_ws/install/image_geometry/lib:/home/me597/ros2_ws/install/cv_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/me597', 'OLDPWD': '/home/me597/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1718', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/me597/ros2_ws/install:/home/me597/ros2_ws/src/task_5/install:/home/me597/install:/home/me597/ros2_ws/src/task_4/launch/install:/home/me597/ros2_ws/src/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'me597', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'me597', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/me597:@/tmp/.ICE-unix/1690,unix/me597:/tmp/.ICE-unix/1690', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/66baf18a_bcea_47c2_a5f7_928a1b7cceeb', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.7UU232', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.105', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '05', 'AMENT_PREFIX_PATH': '/home/me597/ros2_ws/src/task_5/install/task_5:/home/me597/ros2_ws/install/task_5:/home/me597/ros2_ws/src/install/vision_opencv:/home/me597/ros2_ws/src/install/task_5:/home/me597/ros2_ws/src/install/opencv_tests:/home/me597/ros2_ws/src/install/image_geometry:/home/me597/ros2_ws/src/install/cv_bridge:/home/me597/ros2_ws/install/vision_opencv:/home/me597/ros2_ws/install/opencv_tests:/home/me597/ros2_ws/install/image_geometry:/home/me597/ros2_ws/install/cv_bridge:/home/me597/ros2_ws/install/task_4:/home/me597/ros2_ws/src/install/task_4:/home/me597/install/turtlebot3_gazebo:/home/me597/install/task_4:/home/me597/install/sim_utils:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/me597/build/sim_utils', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/me597/build/sim_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/install/sim_utils/lib/python3.10/site-packages:/home/me597/ros2_ws/src/task_5/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/opencv_tests/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/image_geometry/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/src/install/cv_bridge/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/build/task_4:/home/me597/ros2_ws/build/opencv_tests:/home/me597/ros2_ws/install/opencv_tests/lib/python3.10/site-packages:/home/me597/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/install/task_4/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/task_4/lib/python3.10/site-packages:/home/me597/install/task_4/lib/python3.10/site-packages:/home/me597/install/sim_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/me597/ros2_ws/src/install/vision_opencv:/home/me597/ros2_ws/src/install/image_geometry:/home/me597/ros2_ws/src/install/cv_bridge:/home/me597/ros2_ws/install/vision_opencv:/home/me597/ros2_ws/install/image_geometry:/home/me597/ros2_ws/install/cv_bridge:/home/me597/install/turtlebot3_gazebo'}, 'shell': False}
+[18.916705] (-) TimerEvent: {}
+[18.976434] (cv_bridge) StdoutLine: {'line': b'running egg_info\n'}
+[18.976628] (cv_bridge) StdoutLine: {'line': b'creating cv_bridge.egg-info\n'}
+[18.976679] (cv_bridge) StdoutLine: {'line': b'writing cv_bridge.egg-info/PKG-INFO\n'}
+[18.976721] (cv_bridge) StdoutLine: {'line': b'writing dependency_links to cv_bridge.egg-info/dependency_links.txt\n'}
+[18.976787] (cv_bridge) StdoutLine: {'line': b'writing top-level names to cv_bridge.egg-info/top_level.txt\n'}
+[18.976852] (cv_bridge) StdoutLine: {'line': b"writing manifest file 'cv_bridge.egg-info/SOURCES.txt'\n"}
+[18.976934] (cv_bridge) StdoutLine: {'line': b"reading manifest file 'cv_bridge.egg-info/SOURCES.txt'\n"}
+[18.977394] (cv_bridge) StdoutLine: {'line': b"writing manifest file 'cv_bridge.egg-info/SOURCES.txt'\n"}
+[19.005454] (cv_bridge) StdoutLine: {'line': b'[ 38%] Built target ament_cmake_python_build_cv_bridge_egg\n'}
+[19.016882] (-) TimerEvent: {}
+[19.117339] (-) TimerEvent: {}
+[19.182053] (sim_utils) StdoutLine: {'line': b'running egg_info\n'}
+[19.183104] (sim_utils) StdoutLine: {'line': b'writing ../../../build/sim_utils/sim_utils.egg-info/PKG-INFO\n'}
+[19.184431] (sim_utils) StdoutLine: {'line': b'writing dependency_links to ../../../build/sim_utils/sim_utils.egg-info/dependency_links.txt\n'}
+[19.184974] (sim_utils) StdoutLine: {'line': b'writing entry points to ../../../build/sim_utils/sim_utils.egg-info/entry_points.txt\n'}
+[19.185415] (sim_utils) StdoutLine: {'line': b'writing requirements to ../../../build/sim_utils/sim_utils.egg-info/requires.txt\n'}
+[19.185734] (sim_utils) StdoutLine: {'line': b'writing top-level names to ../../../build/sim_utils/sim_utils.egg-info/top_level.txt\n'}
+[19.188936] (sim_utils) StdoutLine: {'line': b"reading manifest file '../../../build/sim_utils/sim_utils.egg-info/SOURCES.txt'\n"}
+[19.190132] (sim_utils) StdoutLine: {'line': b"writing manifest file '../../../build/sim_utils/sim_utils.egg-info/SOURCES.txt'\n"}
+[19.190436] (sim_utils) StdoutLine: {'line': b'running build\n'}
+[19.190647] (sim_utils) StdoutLine: {'line': b'running build_py\n'}
+[19.192337] (sim_utils) StdoutLine: {'line': b'running install\n'}
+[19.193902] (sim_utils) StdoutLine: {'line': b'running install_lib\n'}
+[19.195475] (sim_utils) StdoutLine: {'line': b'running install_data\n'}
+[19.196235] (sim_utils) StdoutLine: {'line': b'running install_egg_info\n'}
+[19.199444] (sim_utils) StdoutLine: {'line': b"removing '/home/me597/install/sim_utils/lib/python3.10/site-packages/sim_utils-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[19.199969] (sim_utils) StdoutLine: {'line': b'Copying ../../../build/sim_utils/sim_utils.egg-info to /home/me597/install/sim_utils/lib/python3.10/site-packages/sim_utils-0.0.0-py3.10.egg-info\n'}
+[19.201508] (sim_utils) StdoutLine: {'line': b'running install_scripts\n'}
+[19.219419] (-) TimerEvent: {}
+[19.229237] (sim_utils) StdoutLine: {'line': b'Installing red_ball_controller script to /home/me597/install/sim_utils/lib/sim_utils\n'}
+[19.230877] (sim_utils) StdoutLine: {'line': b"writing list of installed files to '/home/me597/build/sim_utils/install.log'\n"}
+[19.265239] (sim_utils) CommandEnded: {'returncode': 0}
+[19.275798] (sim_utils) JobEnded: {'identifier': 'sim_utils', 'rc': 0}
+[19.278469] (task_4) JobStarted: {'identifier': 'task_4'}
+[19.323271] (-) TimerEvent: {}
+[19.423550] (-) TimerEvent: {}
+[19.524347] (-) TimerEvent: {}
+[19.625033] (-) TimerEvent: {}
+[19.727966] (-) TimerEvent: {}
+[19.776308] (cv_bridge) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library libcv_bridge.so\x1b[0m\n'}
+[19.828379] (-) TimerEvent: {}
+[19.928835] (-) TimerEvent: {}
+[19.992371] (cv_bridge) StdoutLine: {'line': b'[ 44%] Built target cv_bridge\n'}
+[20.013594] (cv_bridge) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_endian.cpp.o\x1b[0m\n'}
+[20.023576] (cv_bridge) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module.cpp.o\x1b[0m\n'}
+[20.032377] (-) TimerEvent: {}
+[20.133471] (-) TimerEvent: {}
+[20.202005] (task_4) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/task_4', 'build', '--build-base', '/home/me597/build/task_4/build', 'install', '--record', '/home/me597/build/task_4/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/me597/ros2_ws/src/task_4', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'me597', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/me597/ros2_ws/src/install/image_geometry/lib:/home/me597/ros2_ws/src/install/cv_bridge/lib:/home/me597/ros2_ws/install/image_geometry/lib:/home/me597/ros2_ws/install/cv_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/me597', 'OLDPWD': '/home/me597/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1718', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/me597/ros2_ws/install:/home/me597/ros2_ws/src/task_5/install:/home/me597/install:/home/me597/ros2_ws/src/task_4/launch/install:/home/me597/ros2_ws/src/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'me597', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'me597', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/me597:@/tmp/.ICE-unix/1690,unix/me597:/tmp/.ICE-unix/1690', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/66baf18a_bcea_47c2_a5f7_928a1b7cceeb', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.7UU232', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.105', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '05', 'AMENT_PREFIX_PATH': '/home/me597/ros2_ws/src/task_5/install/task_5:/home/me597/ros2_ws/install/task_5:/home/me597/ros2_ws/src/install/vision_opencv:/home/me597/ros2_ws/src/install/task_5:/home/me597/ros2_ws/src/install/opencv_tests:/home/me597/ros2_ws/src/install/image_geometry:/home/me597/ros2_ws/src/install/cv_bridge:/home/me597/ros2_ws/install/vision_opencv:/home/me597/ros2_ws/install/opencv_tests:/home/me597/ros2_ws/install/image_geometry:/home/me597/ros2_ws/install/cv_bridge:/home/me597/ros2_ws/install/task_4:/home/me597/ros2_ws/src/install/task_4:/home/me597/install/turtlebot3_gazebo:/home/me597/install/task_4:/home/me597/install/sim_utils:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/me597/build/task_4', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/me597/build/task_4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/install/task_4/lib/python3.10/site-packages:/home/me597/ros2_ws/src/task_5/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/opencv_tests/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/image_geometry/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/src/install/cv_bridge/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/build/task_4:/home/me597/ros2_ws/build/opencv_tests:/home/me597/ros2_ws/install/opencv_tests/lib/python3.10/site-packages:/home/me597/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/install/task_4/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/task_4/lib/python3.10/site-packages:/home/me597/install/task_4/lib/python3.10/site-packages:/home/me597/install/sim_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/me597/ros2_ws/src/install/vision_opencv:/home/me597/ros2_ws/src/install/image_geometry:/home/me597/ros2_ws/src/install/cv_bridge:/home/me597/ros2_ws/install/vision_opencv:/home/me597/ros2_ws/install/image_geometry:/home/me597/ros2_ws/install/cv_bridge:/home/me597/install/turtlebot3_gazebo'}, 'shell': False}
+[20.233874] (-) TimerEvent: {}
+[20.334358] (-) TimerEvent: {}
+[20.437281] (-) TimerEvent: {}
+[20.537772] (-) TimerEvent: {}
+[20.588587] (task_4) StdoutLine: {'line': b'running egg_info\n'}
+[20.588785] (task_4) StdoutLine: {'line': b'writing ../../../build/task_4/task_4.egg-info/PKG-INFO\n'}
+[20.600014] (task_4) StdoutLine: {'line': b'writing dependency_links to ../../../build/task_4/task_4.egg-info/dependency_links.txt\n'}
+[20.600200] (task_4) StdoutLine: {'line': b'writing entry points to ../../../build/task_4/task_4.egg-info/entry_points.txt\n'}
+[20.605402] (task_4) StdoutLine: {'line': b'writing requirements to ../../../build/task_4/task_4.egg-info/requires.txt\n'}
+[20.605553] (task_4) StdoutLine: {'line': b'writing top-level names to ../../../build/task_4/task_4.egg-info/top_level.txt\n'}
+[20.607863] (task_4) StdoutLine: {'line': b"reading manifest file '../../../build/task_4/task_4.egg-info/SOURCES.txt'\n"}
+[20.621596] (task_4) StdoutLine: {'line': b"writing manifest file '../../../build/task_4/task_4.egg-info/SOURCES.txt'\n"}
+[20.624575] (task_4) StdoutLine: {'line': b'running build\n'}
+[20.624677] (task_4) StdoutLine: {'line': b'running build_py\n'}
+[20.637979] (-) TimerEvent: {}
+[20.683230] (task_4) StdoutLine: {'line': b'copying task_4/auto_navigator.py -> /home/me597/build/task_4/build/lib/task_4\n'}
+[20.684495] (task_4) StdoutLine: {'line': b'running install\n'}
+[20.687263] (task_4) StdoutLine: {'line': b'running install_lib\n'}
+[20.694511] (task_4) StdoutLine: {'line': b'copying /home/me597/build/task_4/build/lib/task_4/auto_navigator.py -> /home/me597/install/task_4/lib/python3.10/site-packages/task_4\n'}
+[20.715589] (task_4) StdoutLine: {'line': b'byte-compiling /home/me597/install/task_4/lib/python3.10/site-packages/task_4/auto_navigator.py to auto_navigator.cpython-310.pyc\n'}
+[20.715740] (task_4) StdoutLine: {'line': b'running install_data\n'}
+[20.738469] (-) TimerEvent: {}
+[20.770670] (task_4) StdoutLine: {'line': b'running install_egg_info\n'}
+[20.783943] (task_4) StdoutLine: {'line': b"removing '/home/me597/install/task_4/lib/python3.10/site-packages/task_4-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[20.784152] (task_4) StdoutLine: {'line': b'Copying ../../../build/task_4/task_4.egg-info to /home/me597/install/task_4/lib/python3.10/site-packages/task_4-0.0.0-py3.10.egg-info\n'}
+[20.788930] (task_4) StdoutLine: {'line': b'running install_scripts\n'}
+[20.838540] (-) TimerEvent: {}
+[20.847907] (task_4) StdoutLine: {'line': b'Installing auto_navigator script to /home/me597/install/task_4/lib/task_4\n'}
+[20.852341] (task_4) StdoutLine: {'line': b"writing list of installed files to '/home/me597/build/task_4/install.log'\n"}
+[20.916557] (task_4) CommandEnded: {'returncode': 0}
+[20.929426] (task_4) JobEnded: {'identifier': 'task_4', 'rc': 0}
+[20.933718] (turtlebot3_gazebo) JobStarted: {'identifier': 'turtlebot3_gazebo'}
+[20.941724] (-) TimerEvent: {}
+[20.954358] (turtlebot3_gazebo) JobProgress: {'identifier': 'turtlebot3_gazebo', 'progress': 'cmake'}
+[20.968070] (turtlebot3_gazebo) JobProgress: {'identifier': 'turtlebot3_gazebo', 'progress': 'build'}
+[20.968455] (turtlebot3_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/me597/build/turtlebot3_gazebo', '--', '-j2', '-l2'], 'cwd': '/home/me597/build/turtlebot3_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'me597'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/me597/ros2_ws/src/install/image_geometry/lib:/home/me597/ros2_ws/src/install/cv_bridge/lib:/home/me597/ros2_ws/install/image_geometry/lib:/home/me597/ros2_ws/install/cv_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/me597'), ('OLDPWD', '/home/me597/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1718'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/me597/ros2_ws/install:/home/me597/ros2_ws/src/task_5/install:/home/me597/install:/home/me597/ros2_ws/src/task_4/launch/install:/home/me597/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'me597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'me597'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/me597:@/tmp/.ICE-unix/1690,unix/me597:/tmp/.ICE-unix/1690'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/66baf18a_bcea_47c2_a5f7_928a1b7cceeb'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7UU232'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '05'), ('AMENT_PREFIX_PATH', '/home/me597/ros2_ws/src/task_5/install/task_5:/home/me597/ros2_ws/install/task_5:/home/me597/ros2_ws/src/install/vision_opencv:/home/me597/ros2_ws/src/install/task_5:/home/me597/ros2_ws/src/install/opencv_tests:/home/me597/ros2_ws/src/install/image_geometry:/home/me597/ros2_ws/src/install/cv_bridge:/home/me597/ros2_ws/install/vision_opencv:/home/me597/ros2_ws/install/opencv_tests:/home/me597/ros2_ws/install/image_geometry:/home/me597/ros2_ws/install/cv_bridge:/home/me597/ros2_ws/install/task_4:/home/me597/ros2_ws/src/install/task_4:/home/me597/install/turtlebot3_gazebo:/home/me597/install/task_4:/home/me597/install/sim_utils:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/me597/build/turtlebot3_gazebo'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/me597/ros2_ws/src/task_5/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/opencv_tests/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/image_geometry/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/src/install/cv_bridge/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/build/task_4:/home/me597/ros2_ws/build/opencv_tests:/home/me597/ros2_ws/install/opencv_tests/lib/python3.10/site-packages:/home/me597/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/install/task_4/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/task_4/lib/python3.10/site-packages:/home/me597/install/task_4/lib/python3.10/site-packages:/home/me597/install/sim_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/me597/ros2_ws/src/install/vision_opencv:/home/me597/ros2_ws/src/install/image_geometry:/home/me597/ros2_ws/src/install/cv_bridge:/home/me597/ros2_ws/install/vision_opencv:/home/me597/ros2_ws/install/image_geometry:/home/me597/ros2_ws/install/cv_bridge:/home/me597/install/turtlebot3_gazebo:/home/me597/ros2_ws/src/task_5/install/task_5:/home/me597/ros2_ws/install/task_5:/home/me597/ros2_ws/src/install/task_5:/home/me597/ros2_ws/src/install/opencv_tests:/home/me597/ros2_ws/install/opencv_tests:/home/me597/ros2_ws/install/task_4:/home/me597/ros2_ws/src/install/task_4:/home/me597/install/task_4:/home/me597/install/sim_utils:/opt/ros/humble')]), 'shell': False}
+[21.041937] (-) TimerEvent: {}
+[21.142329] (-) TimerEvent: {}
+[21.242879] (-) TimerEvent: {}
+[21.343977] (-) TimerEvent: {}
+[21.445049] (-) TimerEvent: {}
+[21.546706] (-) TimerEvent: {}
+[21.649476] (-) TimerEvent: {}
+[21.653591] (turtlebot3_gazebo) CommandEnded: {'returncode': 0}
+[21.713818] (turtlebot3_gazebo) JobProgress: {'identifier': 'turtlebot3_gazebo', 'progress': 'install'}
+[21.713925] (turtlebot3_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/me597/build/turtlebot3_gazebo'], 'cwd': '/home/me597/build/turtlebot3_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'me597'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/me597/ros2_ws/src/install/image_geometry/lib:/home/me597/ros2_ws/src/install/cv_bridge/lib:/home/me597/ros2_ws/install/image_geometry/lib:/home/me597/ros2_ws/install/cv_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/me597'), ('OLDPWD', '/home/me597/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1718'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/me597/ros2_ws/install:/home/me597/ros2_ws/src/task_5/install:/home/me597/install:/home/me597/ros2_ws/src/task_4/launch/install:/home/me597/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'me597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'me597'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/me597:@/tmp/.ICE-unix/1690,unix/me597:/tmp/.ICE-unix/1690'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/66baf18a_bcea_47c2_a5f7_928a1b7cceeb'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7UU232'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '05'), ('AMENT_PREFIX_PATH', '/home/me597/ros2_ws/src/task_5/install/task_5:/home/me597/ros2_ws/install/task_5:/home/me597/ros2_ws/src/install/vision_opencv:/home/me597/ros2_ws/src/install/task_5:/home/me597/ros2_ws/src/install/opencv_tests:/home/me597/ros2_ws/src/install/image_geometry:/home/me597/ros2_ws/src/install/cv_bridge:/home/me597/ros2_ws/install/vision_opencv:/home/me597/ros2_ws/install/opencv_tests:/home/me597/ros2_ws/install/image_geometry:/home/me597/ros2_ws/install/cv_bridge:/home/me597/ros2_ws/install/task_4:/home/me597/ros2_ws/src/install/task_4:/home/me597/install/turtlebot3_gazebo:/home/me597/install/task_4:/home/me597/install/sim_utils:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/me597/build/turtlebot3_gazebo'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/me597/ros2_ws/src/task_5/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/opencv_tests/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/image_geometry/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/src/install/cv_bridge/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/build/task_4:/home/me597/ros2_ws/build/opencv_tests:/home/me597/ros2_ws/install/opencv_tests/lib/python3.10/site-packages:/home/me597/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/install/task_4/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/task_4/lib/python3.10/site-packages:/home/me597/install/task_4/lib/python3.10/site-packages:/home/me597/install/sim_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/me597/ros2_ws/src/install/vision_opencv:/home/me597/ros2_ws/src/install/image_geometry:/home/me597/ros2_ws/src/install/cv_bridge:/home/me597/ros2_ws/install/vision_opencv:/home/me597/ros2_ws/install/image_geometry:/home/me597/ros2_ws/install/cv_bridge:/home/me597/install/turtlebot3_gazebo:/home/me597/ros2_ws/src/task_5/install/task_5:/home/me597/ros2_ws/install/task_5:/home/me597/ros2_ws/src/install/task_5:/home/me597/ros2_ws/src/install/opencv_tests:/home/me597/ros2_ws/install/opencv_tests:/home/me597/ros2_ws/install/task_4:/home/me597/ros2_ws/src/install/task_4:/home/me597/install/task_4:/home/me597/install/sim_utils:/opt/ros/humble')]), 'shell': False}
+[21.736709] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.737048] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch\n'}
+[21.749975] (-) TimerEvent: {}
+[21.755896] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/navigator.launch.py\n'}
+[21.756071] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_cricketball.launch.py\n'}
+[21.756124] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_turtlebot3.launch.py\n'}
+[21.756170] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/mapper.launch.py\n'}
+[21.756214] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house.launch.py\n'}
+[21.756255] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house_norviz.launch.py\n'}
+[21.756297] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/task_6.launch.py\n'}
+[21.756338] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/amcl.launch.py\n'}
+[21.756379] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/robot_state_publisher.launch.py\n'}
+[21.756501] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/map_loader.launch.py\n'}
+[21.756546] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models\n'}
+[21.793574] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common\n'}
+[21.809817] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/model.config\n'}
+[21.810020] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes\n'}
+[21.830880] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_base.dae\n'}
+[21.831090] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/tire.dae\n'}
+[21.831153] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/lds.dae\n'}
+[21.831256] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/burger_base.dae\n'}
+[21.831315] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/r200.dae\n'}
+[21.831367] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle\n'}
+[21.850445] (-) TimerEvent: {}
+[21.858166] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.config\n'}
+[21.858324] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.sdf\n'}
+[21.858392] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trash_can\n'}
+[21.890616] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trash_can/model.config\n'}
+[21.890821] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trash_can/model.sdf\n'}
+[21.890877] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trash_can/meshes\n'}
+[21.909472] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trash_can/meshes/trash_can.dae\n'}
+[21.909688] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house\n'}
+[21.930003] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.config\n'}
+[21.930190] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.sdf\n'}
+[21.930250] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/cricket_ball\n'}
+[21.950461] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/cricket_ball/model.config\n'}
+[21.950683] (-) TimerEvent: {}
+[21.950879] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/cricket_ball/model.rsdf\n'}
+[21.950990] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/cricket_ball/model.sdf\n'}
+[21.951072] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz\n'}
+[21.971023] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_gazebo.rviz\n'}
+[21.971176] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf\n'}
+[21.993522] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle.urdf\n'}
+[21.993743] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds\n'}
+[22.014099] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_world.world\n'}
+[22.014333] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/house_closed.world\n'}
+[22.014502] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_house.world\n'}
+[22.014630] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//maps\n'}
+[22.041084] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//maps/map.yaml\n'}
+[22.041281] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//maps/map.pgm\n'}
+[22.041342] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params\n'}
+[22.051541] (-) TimerEvent: {}
+[22.062187] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/map_server.yaml\n'}
+[22.062329] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/amcl.yaml\n'}
+[22.063036] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/mapper_params_online_async.yaml\n'}
+[22.094898] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/task1.py\n'}
+[22.095126] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/task2.py\n'}
+[22.095333] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/task3.py\n'}
+[22.097980] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/dynamic_obstacles.py\n'}
+[22.101491] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo\n'}
+[22.107903] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo\n'}
+[22.108043] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.sh\n'}
+[22.108096] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.dsv\n'}
+[22.108150] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.sh\n'}
+[22.108203] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.dsv\n'}
+[22.108287] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.bash\n'}
+[22.108335] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.sh\n'}
+[22.108378] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.zsh\n'}
+[22.108419] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.dsv\n'}
+[22.110411] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv\n'}
+[22.127931] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/ament_index/resource_index/packages/turtlebot3_gazebo\n'}
+[22.138781] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[22.139103] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[22.139395] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig.cmake\n'}
+[22.139615] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig-version.cmake\n'}
+[22.143889] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.xml\n'}
+[22.144758] (turtlebot3_gazebo) CommandEnded: {'returncode': 0}
+[22.156694] (-) TimerEvent: {}
+[22.189092] (turtlebot3_gazebo) JobEnded: {'identifier': 'turtlebot3_gazebo', 'rc': 0}
+[22.257116] (-) TimerEvent: {}
+[22.357150] (cv_bridge) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_compression.cpp.o\x1b[0m\n'}
+[22.357410] (-) TimerEvent: {}
+[22.457792] (-) TimerEvent: {}
+[22.558350] (-) TimerEvent: {}
+[22.658870] (-) TimerEvent: {}
+[22.759401] (-) TimerEvent: {}
+[22.864296] (-) TimerEvent: {}
+[22.964610] (-) TimerEvent: {}
+[23.065351] (-) TimerEvent: {}
+[23.165993] (-) TimerEvent: {}
+[23.268536] (-) TimerEvent: {}
+[23.369009] (-) TimerEvent: {}
+[23.470403] (-) TimerEvent: {}
+[23.571729] (-) TimerEvent: {}
+[23.672198] (-) TimerEvent: {}
+[23.772821] (-) TimerEvent: {}
+[23.874833] (-) TimerEvent: {}
+[23.975223] (-) TimerEvent: {}
+[24.075996] (-) TimerEvent: {}
+[24.176802] (-) TimerEvent: {}
+[24.231026] (cv_bridge) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest.cpp.o\x1b[0m\n'}
+[24.277315] (-) TimerEvent: {}
+[24.378186] (-) TimerEvent: {}
+[24.480704] (-) TimerEvent: {}
+[24.529731] (cv_bridge) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module_opencv4.cpp.o\x1b[0m\n'}
+[24.581060] (-) TimerEvent: {}
+[24.686063] (-) TimerEvent: {}
+[24.786921] (-) TimerEvent: {}
+[24.888884] (-) TimerEvent: {}
+[24.989763] (-) TimerEvent: {}
+[25.090742] (-) TimerEvent: {}
+[25.191725] (-) TimerEvent: {}
+[25.294552] (-) TimerEvent: {}
+[25.395652] (-) TimerEvent: {}
+[25.498043] (-) TimerEvent: {}
+[25.603127] (-) TimerEvent: {}
+[25.703663] (-) TimerEvent: {}
+[25.804848] (-) TimerEvent: {}
+[25.905771] (-) TimerEvent: {}
+[26.006415] (-) TimerEvent: {}
+[26.107468] (-) TimerEvent: {}
+[26.212361] (-) TimerEvent: {}
+[26.313922] (-) TimerEvent: {}
+[26.414817] (-) TimerEvent: {}
+[26.515797] (-) TimerEvent: {}
+[26.618313] (-) TimerEvent: {}
+[26.719305] (-) TimerEvent: {}
+[26.819988] (-) TimerEvent: {}
+[26.922339] (-) TimerEvent: {}
+[27.023239] (-) TimerEvent: {}
+[27.123934] (-) TimerEvent: {}
+[27.227105] (-) TimerEvent: {}
+[27.283799] (cv_bridge) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest2.cpp.o\x1b[0m\n'}
+[27.327509] (-) TimerEvent: {}
+[27.428603] (-) TimerEvent: {}
+[27.530518] (-) TimerEvent: {}
+[27.632549] (-) TimerEvent: {}
+[27.733895] (-) TimerEvent: {}
+[27.835581] (-) TimerEvent: {}
+[27.936957] (-) TimerEvent: {}
+[28.040003] (-) TimerEvent: {}
+[28.140512] (-) TimerEvent: {}
+[28.242102] (-) TimerEvent: {}
+[28.343360] (-) TimerEvent: {}
+[28.446844] (-) TimerEvent: {}
+[28.547597] (-) TimerEvent: {}
+[28.649646] (-) TimerEvent: {}
+[28.751826] (-) TimerEvent: {}
+[28.856482] (-) TimerEvent: {}
+[28.957594] (-) TimerEvent: {}
+[29.058341] (-) TimerEvent: {}
+[29.159019] (-) TimerEvent: {}
+[29.250221] (cv_bridge) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared module boost/cv_bridge_boost.so\x1b[0m\n'}
+[29.259582] (-) TimerEvent: {}
+[29.360350] (-) TimerEvent: {}
+[29.462385] (-) TimerEvent: {}
+[29.471176] (cv_bridge) StdoutLine: {'line': b'[ 83%] Built target cv_bridge_boost\n'}
+[29.489009] (cv_bridge) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_rgb_colors.cpp.o\x1b[0m\n'}
+[29.562547] (-) TimerEvent: {}
+[29.664474] (-) TimerEvent: {}
+[29.729694] (cv_bridge) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_dynamic_scaling.cpp.o\x1b[0m\n'}
+[29.765626] (-) TimerEvent: {}
+[29.867001] (-) TimerEvent: {}
+[29.968365] (-) TimerEvent: {}
+[30.069663] (-) TimerEvent: {}
+[30.174688] (-) TimerEvent: {}
+[30.275365] (-) TimerEvent: {}
+[30.376376] (-) TimerEvent: {}
+[30.477641] (-) TimerEvent: {}
+[30.579683] (-) TimerEvent: {}
+[30.683186] (-) TimerEvent: {}
+[30.786445] (-) TimerEvent: {}
+[30.887964] (-) TimerEvent: {}
+[30.990190] (-) TimerEvent: {}
+[31.091761] (-) TimerEvent: {}
+[31.194487] (-) TimerEvent: {}
+[31.295743] (-) TimerEvent: {}
+[31.397908] (-) TimerEvent: {}
+[31.501277] (-) TimerEvent: {}
+[31.602044] (-) TimerEvent: {}
+[31.703486] (-) TimerEvent: {}
+[31.804259] (-) TimerEvent: {}
+[31.906118] (-) TimerEvent: {}
+[32.008776] (-) TimerEvent: {}
+[32.110344] (-) TimerEvent: {}
+[32.211270] (-) TimerEvent: {}
+[32.312347] (-) TimerEvent: {}
+[32.412877] (-) TimerEvent: {}
+[32.513759] (-) TimerEvent: {}
+[32.614306] (-) TimerEvent: {}
+[32.715020] (-) TimerEvent: {}
+[32.815963] (-) TimerEvent: {}
+[32.916971] (-) TimerEvent: {}
+[32.939921] (cv_bridge) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable cv_bridge-utest\x1b[0m\n'}
+[33.017355] (-) TimerEvent: {}
+[33.117914] (-) TimerEvent: {}
+[33.218626] (-) TimerEvent: {}
+[33.319160] (-) TimerEvent: {}
+[33.419721] (-) TimerEvent: {}
+[33.493555] (cv_bridge) StdoutLine: {'line': b'[100%] Built target cv_bridge-utest\n'}
+[33.511535] (cv_bridge) CommandEnded: {'returncode': 0}
+[33.512703] (cv_bridge) JobProgress: {'identifier': 'cv_bridge', 'progress': 'install'}
+[33.514415] (cv_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/me597/build/cv_bridge'], 'cwd': '/home/me597/build/cv_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'me597'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/me597/ros2_ws/src/install/image_geometry/lib:/home/me597/ros2_ws/src/install/cv_bridge/lib:/home/me597/ros2_ws/install/image_geometry/lib:/home/me597/ros2_ws/install/cv_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/me597'), ('OLDPWD', '/home/me597/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1718'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/me597/ros2_ws/install:/home/me597/ros2_ws/src/task_5/install:/home/me597/install:/home/me597/ros2_ws/src/task_4/launch/install:/home/me597/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'me597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'me597'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/me597:@/tmp/.ICE-unix/1690,unix/me597:/tmp/.ICE-unix/1690'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/66baf18a_bcea_47c2_a5f7_928a1b7cceeb'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7UU232'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '05'), ('AMENT_PREFIX_PATH', '/home/me597/ros2_ws/src/task_5/install/task_5:/home/me597/ros2_ws/install/task_5:/home/me597/ros2_ws/src/install/vision_opencv:/home/me597/ros2_ws/src/install/task_5:/home/me597/ros2_ws/src/install/opencv_tests:/home/me597/ros2_ws/src/install/image_geometry:/home/me597/ros2_ws/src/install/cv_bridge:/home/me597/ros2_ws/install/vision_opencv:/home/me597/ros2_ws/install/opencv_tests:/home/me597/ros2_ws/install/image_geometry:/home/me597/ros2_ws/install/cv_bridge:/home/me597/ros2_ws/install/task_4:/home/me597/ros2_ws/src/install/task_4:/home/me597/install/turtlebot3_gazebo:/home/me597/install/task_4:/home/me597/install/sim_utils:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/me597/build/cv_bridge'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/me597/ros2_ws/src/task_5/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/task_5/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/opencv_tests/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/image_geometry/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/src/install/cv_bridge/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/build/task_4:/home/me597/ros2_ws/build/opencv_tests:/home/me597/ros2_ws/install/opencv_tests/lib/python3.10/site-packages:/home/me597/ros2_ws/install/image_geometry/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/install/cv_bridge/local/lib/python3.10/dist-packages:/home/me597/ros2_ws/install/task_4/lib/python3.10/site-packages:/home/me597/ros2_ws/src/install/task_4/lib/python3.10/site-packages:/home/me597/install/task_4/lib/python3.10/site-packages:/home/me597/install/sim_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/me597/ros2_ws/src/install/vision_opencv:/home/me597/ros2_ws/src/install/image_geometry:/home/me597/ros2_ws/src/install/cv_bridge:/home/me597/ros2_ws/install/vision_opencv:/home/me597/ros2_ws/install/image_geometry:/home/me597/ros2_ws/install/cv_bridge:/home/me597/install/turtlebot3_gazebo:/home/me597/ros2_ws/src/task_5/install/task_5:/home/me597/ros2_ws/install/task_5:/home/me597/ros2_ws/src/install/task_5:/home/me597/ros2_ws/src/install/opencv_tests:/home/me597/ros2_ws/install/opencv_tests:/home/me597/ros2_ws/install/task_4:/home/me597/ros2_ws/src/install/task_4:/home/me597/install/task_4:/home/me597/install/sim_utils:/opt/ros/humble')]), 'shell': False}
+[33.520305] (-) TimerEvent: {}
+[33.524109] (cv_bridge) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[33.525613] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/cv_bridge/environment/pythonpath.sh\n'}
+[33.525740] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/cv_bridge/environment/pythonpath.dsv\n'}
+[33.525804] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info\n'}
+[33.525854] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/top_level.txt\n'}
+[33.525965] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[33.526020] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[33.526070] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/PKG-INFO\n'}
+[33.526118] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge\n'}
+[33.526165] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/__init__.py\n'}
+[33.526212] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/core.py\n'}
+[33.575532] (cv_bridge) StdoutLine: {'line': b"Listing '/home/me597/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge'...\n"}
+[33.575729] (cv_bridge) StdoutLine: {'line': b"Compiling '/home/me597/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/__init__.py'...\n"}
+[33.575785] (cv_bridge) StdoutLine: {'line': b"Compiling '/home/me597/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/core.py'...\n"}
+[33.584312] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/lib/libcv_bridge.so\n'}
+[33.584504] (cv_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/me597/install/cv_bridge/lib/libcv_bridge.so" to ""\n'}
+[33.584564] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge_export.h\n'}
+[33.584619] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost/cv_bridge_boost.so\n'}
+[33.584733] (cv_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/me597/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost/cv_bridge_boost.so" to ""\n'}
+[33.584882] (cv_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/cv_bridge/include/cv_bridge\n'}
+[33.584960] (cv_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/cv_bridge/include/cv_bridge/cv_bridge\n'}
+[33.585012] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.hpp\n'}
+[33.585105] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/include/cv_bridge/cv_bridge/rgb_colors.hpp\n'}
+[33.585160] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/include/cv_bridge/cv_bridge/visibility_control.h\n'}
+[33.585211] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/include/cv_bridge/cv_bridge/cv_mat_sensor_msgs_image_type_adapter.hpp\n'}
+[33.585305] (cv_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/me597/install/cv_bridge/lib/libcv_bridge.so\n'}
+[33.585389] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/ament_index/resource_index/package_run_dependencies/cv_bridge\n'}
+[33.585492] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/ament_index/resource_index/parent_prefix_path/cv_bridge\n'}
+[33.585595] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.sh\n'}
+[33.585702] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.dsv\n'}
+[33.585821] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/cv_bridge/environment/path.sh\n'}
+[33.585948] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/cv_bridge/environment/path.dsv\n'}
+[33.586066] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/cv_bridge/local_setup.bash\n'}
+[33.586169] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/cv_bridge/local_setup.sh\n'}
+[33.586268] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/cv_bridge/local_setup.zsh\n'}
+[33.586424] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/cv_bridge/local_setup.dsv\n'}
+[33.586535] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/cv_bridge/package.dsv\n'}
+[33.586651] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/ament_index/resource_index/packages/cv_bridge\n'}
+[33.586888] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport.cmake\n'}
+[33.587000] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport-noconfig.cmake\n'}
+[33.587081] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/cv_bridge/cmake/cv_bridge-extras.cmake\n'}
+[33.587152] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[33.587280] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[33.587370] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig.cmake\n'}
+[33.587462] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig-version.cmake\n'}
+[33.587584] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/me597/install/cv_bridge/share/cv_bridge/package.xml\n'}
+[33.590808] (cv_bridge) CommandEnded: {'returncode': 0}
+[33.605245] (cv_bridge) JobEnded: {'identifier': 'cv_bridge', 'rc': 0}
+[33.605729] (opencv_tests) JobStarted: {'identifier': 'opencv_tests'}
+[33.611724] (task_5) JobStarted: {'identifier': 'task_5'}
+[33.622578] (-) TimerEvent: {}
+[33.722964] (-) TimerEvent: {}
+[33.823507] (-) TimerEvent: {}
+[33.924309] (-) TimerEvent: {}
+[34.024996] (-) TimerEvent: {}
+[34.126308] (-) TimerEvent: {}
+[34.229096] (-) TimerEvent: {}
+[34.234685] (task_5) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 51, in build\n    setup_py_data = get_setup_data(self.context.pkg, env)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/__init__.py", line 20, in get_setup_data\n    return dict(pkg.metadata[key](env))\n  File "/usr/lib/python3/dist-packages/colcon_ros/package_augmentation/ros_ament_python.py", line 57, in getter\n    return get_setup_information(\n  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 249, in get_setup_information\n    _setup_information_cache[hashable_env] = _get_setup_information(\n  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 296, in _get_setup_information\n    result = subprocess.run(\n  File "/usr/lib/python3.10/subprocess.py", line 526, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command \'[\'/usr/bin/python3\', \'-c\', \'import sys;from contextlib import suppress;exec("with suppress(ImportError):    from setuptools.extern.packaging.specifiers    import SpecifierSet");exec("with suppress(ImportError):    from packaging.specifiers import SpecifierSet");from distutils.core import run_setup;dist = run_setup(    \\\'setup.py\\\', script_args=(\\\'--dry-run\\\',), stop_after=\\\'config\\\');skip_keys = (\\\'cmdclass\\\', \\\'distclass\\\', \\\'ext_modules\\\', \\\'metadata\\\');data = {    key: value for key, value in dist.__dict__.items()     if (        not key.startswith(\\\'_\\\') and         not callable(value) and         key not in skip_keys and         key not in dist.display_option_names    )};data[\\\'metadata\\\'] = {    k: v for k, v in dist.metadata.__dict__.items()     if k not in (\\\'license_files\\\', \\\'provides_extras\\\')};sys.stdout.buffer.write(repr(data).encode(\\\'utf-8\\\'))\']\' returned non-zero exit status 1.\n'}
+[34.235201] (task_5) JobEnded: {'identifier': 'task_5', 'rc': 1}
+[34.235556] (opencv_tests) JobEnded: {'identifier': 'opencv_tests', 'rc': 'SIGINT'}
+[34.247836] (vision_opencv) JobSkipped: {'identifier': 'vision_opencv'}
+[34.247905] (-) EventReactorShutdown: {}

@@ -1,0 +1,13 @@
+[INFO] [1743099247.106390615] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1743099247.107014733] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[INFO] [1743099247.212273285] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1743099247.705002181] [rviz2]: Trying to create a map of size 266 x 212 using 1 swatches
+[ERROR] [1743099247.721893028] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1743099272.958064533] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1078.696 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743099273.414396054] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1078.897 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743099273.747721352] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1079.099 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743099274.178822356] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1079.304 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743099274.495246592] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1079.501 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743099274.916298108] [rviz2]: Message Filter dropping message: frame 'base_scan' at time 1079.702 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743099303.759748870] [rclcpp]: signal_handler(signum=2)

@@ -1,0 +1,15 @@
+[INFO] [1743058486.106906939] [robot.map_server]: 
+	map_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1743058486.107008188] [robot.map_server]: Creating
+[INFO] [1743058486.173129746] [robot.map_server]: Configuring
+[INFO] [1743058486.173191780] [map_io]: Loading yaml file: /home/me597/ros2_ws/install/task_4/share/task_4/maps/classroom_map.yaml
+[ERROR] [1743058486.173279603] [map_io]: Failed processing YAML file /home/me597/ros2_ws/install/task_4/share/task_4/maps/classroom_map.yaml at position (-1:-1) for reason: bad file: /home/me597/ros2_ws/install/task_4/share/task_4/maps/classroom_map.yaml
+[ERROR] [1743058486.173310004] [robot.map_server]: Caught exception in callback for transition 10
+[ERROR] [1743058486.173317102] [robot.map_server]: Original error: Failed to load map yaml file: /home/me597/ros2_ws/install/task_4/share/task_4/maps/classroom_map.yaml
+[WARN] [1743058486.173329962] [robot.map_server]: Error occurred while doing error handling.
+[FATAL] [1743058486.173336647] [robot.map_server]: Lifecycle node map_server does not have error state implemented
+[INFO] [1743058584.987091634] [rclcpp]: signal_handler(signum=2)
+[INFO] [1743058584.987194269] [robot.map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[INFO] [1743058584.987255266] [robot.map_server]: Destroying bond (map_server) to lifecycle manager.

@@ -1,0 +1,29 @@
+[INFO] [1743022323.705959590] [amcl]: 
+	amcl lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1743022323.722537820] [amcl]: Creating
+[INFO] [1743022323.906411996] [amcl]: Configuring
+[INFO] [1743022323.907278347] [amcl]: initTransforms
+[INFO] [1743022324.042073311] [amcl]: initPubSub
+[INFO] [1743022324.078354748] [amcl]: Subscribed to map topic.
+[INFO] [1743022324.134512728] [amcl]: Received a 266 X 212 map @ 0.050 m/pix
+[INFO] [1743022324.285983550] [amcl]: Activating
+[INFO] [1743022324.286039990] [amcl]: initialPoseReceived
+[INFO] [1743022324.286127898] [amcl]: Setting pose (0.000000): 0.000 0.000 0.000
+[INFO] [1743022324.290709920] [amcl]: Creating bond (amcl) to lifecycle manager.
+[INFO] [1743022338.956511312] [amcl]: createLaserObject
+[INFO] [1743022341.392895729] [amcl]: Message Filter dropping message: frame 'base_scan' at time 1078.972 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743023051.903444314] [amcl]: initialPoseReceived
+[WARN] [1743023051.903580052] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1743023051.891314 but the latest data is at time 1307.894000, when looking up transform from frame [odom] to frame [base_footprint])
+[INFO] [1743023051.903591749] [amcl]: Setting pose (1307.894000): 0.089 -0.083 0.023
+[INFO] [1743023564.824949231] [amcl]: initialPoseReceived
+[WARN] [1743023564.825094706] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1743023564.820097 but the latest data is at time 1515.634000, when looking up transform from frame [odom] to frame [base_footprint])
+[INFO] [1743023564.825117062] [amcl]: Setting pose (1515.594000): 0.037 -0.051 0.020
+[INFO] [1743023691.197257465] [amcl]: Message Filter dropping message: frame 'base_scan' at time 1570.034 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743024092.867036752] [rclcpp]: signal_handler(signum=2)
+[INFO] [1743024092.867372549] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[INFO] [1743024092.867447187] [amcl]: Deactivating
+[INFO] [1743024092.867491377] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[INFO] [1743024092.887713800] [amcl]: Cleaning up
+[INFO] [1743024092.941912185] [amcl]: Destroying bond (amcl) to lifecycle manager.

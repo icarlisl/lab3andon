@@ -1,0 +1,33 @@
+1743097857.3580678 [INFO] [launch]: All log files can be found below /home/me597/.ros/log/2025-03-27-13-50-57-357438-me597-6859
+1743097857.3582306 [INFO] [launch]: Default logging verbosity is set to INFO
+1743097858.3488657 [INFO] [gzserver-1]: process started with pid [6860]
+1743097858.3491611 [INFO] [gzclient-2]: process started with pid [6862]
+1743097858.3492746 [INFO] [robot_state_publisher-3]: process started with pid [6864]
+1743097858.3493409 [INFO] [spawn_entity.py-4]: process started with pid [6866]
+1743097858.3494029 [INFO] [rviz2-5]: process started with pid [6868]
+1743097858.3494785 [INFO] [map_server-6]: process started with pid [6870]
+1743097858.3495407 [INFO] [amcl-7]: process started with pid [6872]
+1743097858.3496013 [INFO] [lifecycle_manager-8]: process started with pid [6874]
+1743097858.3496616 [INFO] [task2.py-9]: process started with pid [6877]
+1743097859.4272256 [gzserver-1] X Error of failed request:  BadDrawable (invalid Pixmap or Window parameter)
+1743097859.4277046 [gzserver-1]   Major opcode of failed request:  148 (GLX)
+1743097859.4277873 [gzserver-1]   Minor opcode of failed request:  29 (X_GLXGetDrawableAttributes)
+1743097859.4278362 [gzserver-1]   Resource id in failed request:  0x2000002
+1743097859.4278824 [gzserver-1]   Serial number of failed request:  34
+1743097859.4279299 [gzserver-1]   Current serial number in output stream:  34
+1743097886.4392972 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1743097886.4719920 [gzserver-1] [INFO] [1743097886.438464973] [rclcpp]: signal_handler(signum=2)
+1743097886.5563388 [ERROR] [gzclient-2]: process has died [pid 6862, exit code -2, cmd 'gzclient --gui-client-plugin=libgazebo_ros_eol_gui.so'].
+1743097886.5846853 [INFO] [robot_state_publisher-3]: process has finished cleanly [pid 6864]
+1743097886.6205456 [ERROR] [spawn_entity.py-4]: process has died [pid 6866, exit code -2, cmd '/opt/ros/humble/lib/gazebo_ros/spawn_entity.py -entity waffle -file /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/models/turtlebot3_waffle/model.sdf -x 0 -y 0 -z 0.01 --ros-args'].
+1743097886.6428151 [INFO] [lifecycle_manager-8]: process has finished cleanly [pid 6874]
+1743097886.6435072 [INFO] [map_server-6]: process has finished cleanly [pid 6870]
+1743097886.6457117 [INFO] [amcl-7]: process has finished cleanly [pid 6872]
+1743097886.7688177 [ERROR] [task2.py-9]: process has died [pid 6877, exit code 1, cmd '/home/me597/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/task2.py --ros-args -r __node:=task2_algorithm --params-file /tmp/launch_params_4wnm5q4d'].
+1743097886.7942967 [INFO] [rviz2-5]: process has finished cleanly [pid 6868]
+1743097891.4763424 [ERROR] [gzserver-1]: process[gzserver-1] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1743097891.4802091 [INFO] [gzserver-1]: sending signal 'SIGTERM' to process[gzserver-1]
+1743097891.4812407 [gzserver-1] [INFO] [1743097891.480741426] [rclcpp]: signal_handler(signum=15)
+1743097896.4716990 [ERROR] [gzserver-1]: process[gzserver-1] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+1743097896.4733224 [INFO] [gzserver-1]: sending signal 'SIGKILL' to process[gzserver-1]
+1743097896.4811049 [ERROR] [gzserver-1]: process has died [pid 6860, exit code -9, cmd 'gzserver /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/worlds/house_closed.world -slibgazebo_ros_init.so -slibgazebo_ros_factory.so -slibgazebo_ros_force_system.so'].

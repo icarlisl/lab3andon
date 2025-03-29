@@ -1,0 +1,25 @@
+[INFO] [1743025250.354163632] [map_server]: 
+	map_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1743025250.354267897] [map_server]: Creating
+[INFO] [1743025250.356563037] [map_server]: Configuring
+[INFO] [1743025250.356626865] [map_io]: Loading yaml file: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/maps/map.yaml
+[INFO] [1743025250.356834154] [map_io]: resolution: 0.05
+[INFO] [1743025250.356841201] [map_io]: origin[0]: -4.17
+[INFO] [1743025250.356844859] [map_io]: origin[1]: -6.26
+[INFO] [1743025250.356848309] [map_io]: origin[2]: 0
+[INFO] [1743025250.356851888] [map_io]: free_thresh: 0.25
+[INFO] [1743025250.356855455] [map_io]: occupied_thresh: 0.65
+[INFO] [1743025250.356859287] [map_io]: mode: trinary
+[INFO] [1743025250.356863148] [map_io]: negate: 0
+[INFO] [1743025250.357058847] [map_io]: Loading image_file: /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/maps/map.pgm
+[INFO] [1743025250.377444469] [map_io]: Read map /home/me597/install/turtlebot3_gazebo/share/turtlebot3_gazebo/maps/map.pgm: 266 X 212 map @ 0.05 m/cell
+[INFO] [1743025250.495676685] [map_server]: Activating
+[INFO] [1743025250.495910341] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1743025824.402481802] [rclcpp]: signal_handler(signum=2)
+[INFO] [1743025824.405652173] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[INFO] [1743025824.405883182] [map_server]: Deactivating
+[INFO] [1743025824.405930261] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1743025824.427986446] [map_server]: Cleaning up
+[INFO] [1743025824.428064532] [map_server]: Destroying bond (map_server) to lifecycle manager.

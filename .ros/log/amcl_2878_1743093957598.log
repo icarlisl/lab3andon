@@ -1,0 +1,34 @@
+[INFO] [1743093957.988953343] [amcl]: 
+	amcl lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1743093957.995928365] [amcl]: Creating
+[INFO] [1743093958.199912841] [amcl]: Configuring
+[INFO] [1743093958.200498279] [amcl]: initTransforms
+[INFO] [1743093958.272764243] [amcl]: initPubSub
+[INFO] [1743093958.298069883] [amcl]: Subscribed to map topic.
+[INFO] [1743093958.335713845] [amcl]: Received a 266 X 212 map @ 0.050 m/pix
+[INFO] [1743093958.451875293] [amcl]: Activating
+[INFO] [1743093958.451936276] [amcl]: initialPoseReceived
+[INFO] [1743093958.451995266] [amcl]: Setting pose (0.000000): 0.000 0.000 0.000
+[INFO] [1743093958.452475041] [amcl]: Creating bond (amcl) to lifecycle manager.
+[INFO] [1743093972.392066978] [amcl]: createLaserObject
+[INFO] [1743093975.087831394] [amcl]: Message Filter dropping message: frame 'base_scan' at time 1078.832 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1743094342.248371421] [amcl]: initialPoseReceived
+[WARN] [1743094342.248452334] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1743094342.246217 but the latest data is at time 1215.342000, when looking up transform from frame [odom] to frame [base_footprint])
+[INFO] [1743094342.248462449] [amcl]: Setting pose (1215.294000): 0.016 -0.051 -0.019
+[INFO] [1743094555.563105565] [amcl]: initialPoseReceived
+[WARN] [1743094555.563195491] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1743094555.558804 but the latest data is at time 1267.770000, when looking up transform from frame [odom] to frame [base_footprint])
+[INFO] [1743094555.563207284] [amcl]: Setting pose (1267.694000): -0.089 -0.050 -0.011
+[INFO] [1743094569.668737476] [amcl]: initialPoseReceived
+[WARN] [1743094569.668851856] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1743094569.665158 but the latest data is at time 1271.170000, when looking up transform from frame [odom] to frame [base_footprint])
+[INFO] [1743094569.668863854] [amcl]: Setting pose (1271.094000): -0.173 -0.017 0.003
+[INFO] [1743095144.190088225] [amcl]: initialPoseReceived
+[WARN] [1743095144.190214901] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1743095144.189718 but the latest data is at time 1327.168000, when looking up transform from frame [odom] to frame [base_footprint])
+[INFO] [1743095144.190234361] [amcl]: Setting pose (1327.094000): -0.246 -0.006 0.006
+[INFO] [1743095166.583893946] [rclcpp]: signal_handler(signum=2)
+[INFO] [1743095166.584193610] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[INFO] [1743095166.584284719] [amcl]: Deactivating
+[INFO] [1743095166.584301244] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[INFO] [1743095166.595110494] [amcl]: Cleaning up
+[INFO] [1743095166.781914107] [amcl]: Destroying bond (amcl) to lifecycle manager.

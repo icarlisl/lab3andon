@@ -1,0 +1,8 @@
+Dbg [parser.cc:574] Converting a deprecated source[data-string].
+Dbg [Converter.cc:68] Version[1.5] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:1131] XML Element[origin], child of element[joint], not defined in SDF. Copying[origin] as children of [joint].
+Warning [parser.cc:833] XML Attribute[link] in element[parent] not defined in SDF, ignoring.
+Warning [parser.cc:833] XML Attribute[link] in element[child] not defined in SDF, ignoring.
+Dbg [parser.cc:1131] XML Element[origin], child of element[joint], not defined in SDF. Copying[origin] as children of [joint].
