@@ -62,8 +62,8 @@ class ObjectDetector(Node):
             bbox_msg = BoundingBox2D()
             bbox_msg.center.position.x = centroid_x
             bbox_msg.center.position.y = centroid_y
-            bbox_msg.size_x = w
-            bbox_msg.size_y = h
+            bbox_msg.size_x = float(w)
+            bbox_msg.size_y = float(h)
             self.bbox_pub.publish(bbox_msg)
             
             # Draw bounding box and centroid
